@@ -1,0 +1,930 @@
+study,id,t,r,n,study_year,unpublished_data,rob,unpublished
+CL3-20098-022,1,agomelatine,68,133,2001,1,2,0
+CL3-20098-022,1,fluoxetine,77,137,2001,1,2,0
+CL3-20098-022,1,placebo,69,149,2001,1,2,0
+CL3-20098-023,2,agomelatine,71,142,2001,1,1,0
+CL3-20098-023,2,paroxetine,74,138,2001,1,1,0
+CL3-20098-023,2,placebo,63,137,2001,1,1,0
+Kennedy2006 (CL3-20098-043),3,agomelatine,52,107,2003,1,1,0
+Kennedy2006 (CL3-20098-043),3,placebo,36,105,2003,1,1,0
+Olie2007 (CL3-20098-042),4,agomelatine,63,118,2004,1,1,0
+Olie2007 (CL3-20098-042),4,placebo,42,120,2004,1,1,0
+Stahl2010 (CAGO178A2302),5,agomelatine,141,337,2008,1,2,0
+Stahl2010 (CAGO178A2302),5,placebo,54,166,2008,1,2,0
+Zajecka2010 (CAGO178A2301) (NCT00411099),6,agomelatine,146,338,2008,1,1,0
+Zajecka2010 (CAGO178A2301) (NCT00411099),6,placebo,63,173,2008,1,1,0
+CL3-20098-024,7,agomelatine,175,301,2002,1,1,0
+CL3-20098-024,7,fluoxetine,89,148,2002,1,1,0
+CL3-20098-024,7,placebo,91,158,2002,1,1,0
+Hale2010 (CL3-20098-045),8,agomelatine,177,252,2008,1,1,0
+Hale2010 (CL3-20098-045),8,fluoxetine,164,263,2008,1,1,0
+CL3-20098-026,9,agomelatine,51,109,2001,1,1,0
+CL3-20098-026,9,placebo,50,109,2001,1,1,0
+Montgomery2004b (CL3-20098-030),10,agomelatine,106,167,2001,1,1,0
+Montgomery2004b (CL3-20098-030),10,paroxetine,120,168,2001,1,1,0
+CL3-20098-036,11,agomelatine,113,137,2004,1,1,0
+CL3-20098-036,11,venlafaxine,111,140,2004,1,1,0
+CL3-20098-048,12,agomelatine,127,213,2008,1,1,0
+CL3-20098-048,12,paroxetine,118,199,2008,1,1,0
+"Shu2014 (CL3-20098-052, ChiCTR-TRC-11001668) ",13,agomelatine,205,314,2008,1,1,0
+"Shu2014 (CL3-20098-052, ChiCTR-TRC-11001668) ",13,fluoxetine,209,314,2008,1,1,0
+"
+Quera-Salva2010 (CL3-20098-056)",14,agomelatine,44,71,2008,1,1,0
+"
+Quera-Salva2010 (CL3-20098-056)",14,escitalopram,36,67,2008,1,1,0
+CL3-20098-062,15,agomelatine,131,202,2010,1,1,0
+CL3-20098-062,15,duloxetine,153,216,2010,1,1,0
+Corruble2013 (CL3-20098-063),16,agomelatine,134,164,2008,1,1,0
+Corruble2013 (CL3-20098-063),16,escitalopram,128,160,2008,1,1,0
+CL3-20098-070,17,agomelatine,88,151,2011,1,1,0
+CL3-20098-070,17,placebo,27,71,2011,1,1,0
+Lemoine2007 (CL3-20098-035),18,agomelatine,126,165,2004,1,2,0
+Lemoine2007 (CL3-20098-035),18,venlafaxine,115,167,2004,1,2,0
+CAGO178A2303 (NCT00463242),19,agomelatine,70,169,2008,1,2,1
+CAGO178A2303 (NCT00463242),19,paroxetine,91,168,2008,1,2,1
+CAGO178A2303 (NCT00463242),19,placebo,61,166,2008,1,2,1
+Loo2002 (CL2-014),20,agomelatine,83,137,2002,1,2,0
+Loo2002 (CL2-014),20,placebo,63,139,2002,1,2,0
+Loo2002 (CL2-014),20,paroxetine,81,147,2002,1,2,0
+"Kennedy2014 (EudraCT 2009-011238-84, CL3-20098-069)",21,agomelatine,141,275,2009,1,1,0
+"Kennedy2014 (EudraCT 2009-011238-84, CL3-20098-069)",21,placebo,35,141,2009,1,1,0
+Heun2013 (lSRCTl\l5750736O),22,agomelatine,88,151,2009,0,1,0
+Heun2013 (lSRCTl\l5750736O),22,placebo,27,71,2009,0,1,0
+Feighner1979,23,amitriptyline,41,93,1979,0,1,0
+Feighner1979,23,placebo,16,50,1979,0,1,0
+Shipley1981,27,amitriptyline,43,53,1981,0,2,0
+Shipley1981,27,placebo,6,23,1981,0,2,0
+Claghorn1983,30,amitriptyline,49,85,1983,0,1,0
+Claghorn1983,30,placebo,36,87,1983,0,1,0
+Hormazabal1985,32,amitriptyline,13,20,1985,0,1,0
+Hormazabal1985,32,placebo,6,20,1985,0,1,0
+Rickels1985,34,amitriptyline,85,124,1985,0,2,0
+Rickels1985,34,placebo,44,130,1985,0,2,0
+Amsterdam1986,35,amitriptyline,31,55,1986,0,2,0
+Amsterdam1986,35,placebo,15,54,1986,0,2,0
+Hicks1988,36,amitriptyline,11,16,1988,0,2,0
+Hicks1988,36,placebo,5,15,1988,0,2,0
+Paykel1988,37,amitriptyline,28,45,1988,0,2,0
+Paykel1988,37,placebo,23,55,1988,0,2,0
+Gelenberg1990,38,amitriptyline,6,19,1990,0,2,0
+Gelenberg1990,38,placebo,6,22,1990,0,2,0
+Bakish1992,41,amitriptyline,34,58,1992,0,2,0
+Bakish1992,41,placebo,20,56,1992,0,2,0
+Katz1993a,42,amitriptyline,51,95,1993,0,2,0
+Katz1993a,42,placebo,30,94,1993,0,2,0
+Kusalic1993,44,amitriptyline,10,13,1993,0,2,0
+Kusalic1993,44,placebo,6,15,1993,0,2,0
+Wilcox1994,45,amitriptyline,22,50,1994,0,2,0
+Wilcox1994,45,placebo,10,49,1994,0,2,0
+Mynors-Wallis1995,46,amitriptyline,12,31,1995,0,2,0
+Mynors-Wallis1995,46,placebo,5,30,1995,0,2,0
+Kane1983,48,bupropion,4,13,1983,0,1,0
+Kane1983,48,placebo,2,7,1983,0,1,0
+Feighner1984,49,bupropion,27,45,1984,0,2,0
+Feighner1984,49,placebo,2,22,1984,0,2,0
+Lineberry1990 (WELL 84A),50,bupropion,56,112,1988,1,2,0
+Lineberry1990 (WELL 84A),50,placebo,36,112,1988,1,2,0
+Feighner1991,51,fluoxetine,35,62,1991,0,2,0
+Feighner1991,51,bupropion,37,61,1991,0,2,0
+Weisler1994,52,bupropion,33,63,1994,0,2,0
+Weisler1994,52,trazodone,21,61,1994,0,2,0
+"Reimherr1998 (WELL203, FDA203)",53,placebo,41,121,1991,1,2,0
+"Reimherr1998 (WELL203, FDA203)",53,bupropion,52,120,1991,1,2,0
+Coleman1999 (AK1A4002),55,sertraline,67,118,1998,1,2,0
+Coleman1999 (AK1A4002),55,placebo,66,124,1998,1,2,0
+Croft1999 (AK1A4001),56,sertraline,79,119,1998,1,1,0
+Croft1999 (AK1A4001),56,placebo,50,121,1998,1,1,0
+Coleman2001 (AK1A4007),57,fluoxetine,83,154,2000,1,2,0
+Coleman2001 (AK1A4007),57,bupropion,76,150,2000,1,2,0
+Coleman2001 (AK1A4007),57,placebo,73,152,2000,1,2,0
+Caligiuri2003,58,bupropion,3,7,2000,0,2,0
+Caligiuri2003,58,sertraline,4,9,2000,0,2,0
+Thase2006 (WELL 100368),60,bupropion,86,171,2005,1,2,0
+Thase2006 (WELL 100368),60,venlafaxine,82,177,2006,1,2,0
+Clayton2006b (WELL AK130927),61,escitalopram,90,138,2004,1,2,0
+Clayton2006b (WELL AK130927),61,bupropion,82,141,2004,1,2,0
+Clayton2006b (WELL AK130927),61,placebo,69,141,2004,1,2,0
+Clayton2006a (WELL AK130926),62,bupropion,81,138,2004,1,2,0
+Clayton2006a (WELL AK130926),62,escitalopram,82,149,2004,1,2,0
+Clayton2006a (WELL AK130926),62,placebo,64,137,2004,1,2,0
+Jefferson2006,63,placebo,52,139,2006,0,2,0
+Jefferson2006,63,bupropion,70,135,2006,0,2,0
+Hewett2009 (WXL101497),64,venlafaxine,120,189,2005,1,1,0
+Hewett2009 (WXL101497),64,placebo,91,199,2005,1,1,0
+Hewett2010a (AK130940) (NCT00093288),65,placebo,87,208,2005,1,2,0
+Hewett2010a (AK130940) (NCT00093288),65,bupropion,109,212,2005,1,2,0
+Hewett2010b (AK130939),66,venlafaxine,127,198,2005,1,2,0
+Hewett2010b (AK130939),66,placebo,91,189,2005,1,2,0
+Wellbutrin 06,67,bupropion,22,56,1978,1,1,1
+Wellbutrin 06,67,placebo,7,29,1978,1,1,1
+GSK14,68,bupropion,27,77,1979,1,2,1
+GSK14,68,placebo,6,40,1979,1,2,1
+845,69,bupropion,26,56,1980,1,2,1
+845,69,placebo,17,52,1980,1,2,1
+WELL 029,70,bupropion,8,25,1984,1,2,1
+WELL 029,70,placebo,7,24,1984,1,2,1
+Wellbutrin 25,71,bupropion,38,85,1985,1,2,1
+Wellbutrin 25,71,placebo,14,43,1985,1,2,1
+Study 205 (FDA) (WELL 205),72,bupropion,90,239,1993,1,2,1
+Study 205 (FDA) (WELL 205),72,placebo,38,124,1993,1,2,1
+WELL AK1A4006,73,fluoxetine,88,155,2000,1,2,1
+WELL AK1A4006,73,bupropion,74,158,2000,1,2,1
+WELL AK1A4006,73,placebo,78,154,2000,1,2,1
+WELL AK140016,74,bupropion,35,69,2001,1,2,1
+WELL AK140016,74,paroxetine,36,71,2001,1,2,1
+Koshino2013 (NCT01138007),76,bupropion,82,192,2012,1,1,0
+Koshino2013 (NCT01138007),76,placebo,86,187,2012,1,1,0
+Study 89306 (FDA),78,citalopram,98,185,1998,1,2,1
+Study 89306 (FDA),78,placebo,42,89,1998,1,2,1
+Montgomery1992 (Study 89303 FDA),79,citalopram,67,134,1992,1,2,1
+Montgomery1992 (Study 89303 FDA),79,placebo,28,66,1992,1,2,1
+Feighner1999 (Study 91206 FDA),80,citalopram,141,261,1999,1,2,0
+Feighner1999 (Study 91206 FDA),80,placebo,42,129,1999,1,2,0
+Andersen1986,81,citalopram,23,57,1986,0,2,0
+Andersen1986,81,clomipramine,31,57,1986,0,2,0
+Timmerman1993 (Study 89422 - FDA and Haffmans 1996),83,fluvoxamine,31,109,1993,1,1,0
+Timmerman1993 (Study 89422 - FDA and Haffmans 1996),83,citalopram,33,108,1993,1,1,0
+Patris1996 (Study 91301 - FDA),84,fluoxetine,123,184,1996,1,1,0
+Patris1996 (Study 91301 - FDA),84,citalopram,120,173,1996,1,1,0
+Bougerol1997 (Study 91302 - FDA),85,fluoxetine,109,158,1997,1,2,0
+Bougerol1997 (Study 91302 - FDA),85,citalopram,102,158,1997,1,2,0
+Stahl2000,88,sertraline,55,108,2000,0,2,0
+Stahl2000,88,placebo,43,108,2000,0,2,0
+Roose2004 (CIT-MD-03),89,citalopram,34,87,2001,1,2,0
+Roose2004 (CIT-MD-03),89,placebo,34,91,2001,1,2,0
+Hsu2011,92,citalopram,9,25,2011,0,2,0
+Hsu2011,92,sertraline,6,26,2011,0,2,0
+Gastpar2006,93,citalopram,71,127,2006,0,1,0
+Gastpar2006,93,placebo,51,130,2006,0,1,0
+"Liebowitz2008 (Study 332, NCT00277823)",95,desvenlafaxine,155,299,2008,1,1,0
+"Liebowitz2008 (Study 332, NCT00277823)",95,placebo,66,152,2008,1,1,0
+"Boyer2008 (Study 333, NCT00300378)(EUCTR2005-005463-28, 3151A1-333-EU)",96,desvenlafaxine,207,324,2004,1,1,0
+"Boyer2008 (Study 333, NCT00300378)(EUCTR2005-005463-28, 3151A1-333-EU)",96,placebo,80,161,2004,1,1,0
+"Lieberman2008a (Study 309)(EUCTR2004-000562-13, 3151A1-309-EU, NCT00090649)",97,placebo,60,120,2004,1,1,0
+"Lieberman2008a (Study 309)(EUCTR2004-000562-13, 3151A1-309-EU, NCT00090649)",97,venlafaxine,81,127,2004,1,1,0
+Lieberman2008b (Study 317),98,placebo,55,125,2004,1,1,0
+Lieberman2008b (Study 317),98,venlafaxine,66,117,2004,1,1,0
+Tourian2009 (NCT00384033),99,desvenlafaxine,132,315,2009,1,2,0
+Tourian2009 (NCT00384033),99,duloxetine,74,159,2009,1,2,0
+Tourian2009 (NCT00384033),99,placebo,61,164,2009,1,2,0
+Dunlop2011 (NCT00824291),100,desvenlafaxine,174,291,2011,0,2,0
+Dunlop2011 (NCT00824291),100,placebo,65,146,2011,0,2,0
+Clayton2013 (NCT01121484),101,desvenlafaxine,89,218,2013,0,1,0
+Clayton2013 (NCT01121484),101,placebo,72,221,2013,0,1,0
+Iwata2013 (NCT00798707),102,desvenlafaxine,109,237,2013,0,1,0
+Iwata2013 (NCT00798707),102,placebo,81,235,2013,0,1,0
+Liebowitz2013 (NCT00863798),103,desvenlafaxine,92,227,2013,0,1,0
+Liebowitz2013 (NCT00863798),103,placebo,85,227,2013,0,1,0
+Clayton2015,104,placebo,116,306,2015,1,1,0
+Clayton2015,104,desvenlafaxine,274,618,2015,1,1,0
+"DeMartinis2007 (Study 306, NCT00072774)",105,placebo,34,120,2004,1,2,0
+"DeMartinis2007 (Study 306, NCT00072774)",105,desvenlafaxine,50,118,2004,1,2,0
+Goldstein2002 (HMAQ - Study Group A),106,duloxetine,33,70,2000,1,2,0
+Goldstein2002 (HMAQ - Study Group A),106,placebo,24,70,2000,1,2,0
+Goldstein2002 (HMAQ - Study Group A),106,fluoxetine,15,33,2000,1,2,0
+Study F1J-MC-HMAQ - Study Group B (starting page in the pdf document: 147),107,duloxetine,40,82,2001,1,2,1
+Study F1J-MC-HMAQ - Study Group B (starting page in the pdf document: 147),107,placebo,28,75,2001,1,2,1
+Study F1J-MC-HMAQ - Study Group B (starting page in the pdf document: 147),107,fluoxetine,15,37,2001,1,2,1
+"Goldstein2004a (HMAT - Study Group A, ID#4091)",108,duloxetine,52,175,2001,1,2,0
+"Goldstein2004a (HMAT - Study Group A, ID#4091)",108,placebo,24,90,2001,1,2,0
+"Goldstein2004a (HMAT - Study Group A, ID#4091)",108,paroxetine,38,89,2001,1,2,0
+"Goldstein2004b (HMAT  - Study Group B, ID#4091)",109,duloxetine,81,177,2001,1,2,0
+"Goldstein2004b (HMAT  - Study Group B, ID#4091)",109,placebo,27,89,2001,1,2,0
+"Goldstein2004b (HMAT  - Study Group B, ID#4091)",109,paroxetine,34,87,2001,1,2,0
+Detke2002a (HMBH -  Study Group A),110,duloxetine,55,123,2002,1,2,0
+Detke2002a (HMBH -  Study Group A),110,placebo,27,122,2002,1,2,0
+Detke2002b (HMBH - Study Group B),111,duloxetine,62,128,2002,1,2,0
+Detke2002b (HMBH - Study Group B),111,placebo,48,139,2002,1,2,0
+Detke2004 (HMAY Study Group A),112,duloxetine,126,188,2004,1,1,0
+Detke2004 (HMAY Study Group A),112,paroxetine,63,86,2004,1,1,0
+Detke2004 (HMAY Study Group A),112,placebo,41,93,2004,1,1,0
+Perahia2008a (HMBU) (NCT00071695),113,duloxetine,85,166,2004,1,1,0
+Perahia2008a (HMBU) (NCT00071695),113,venlafaxine,91,166,2004,1,1,0
+Raskin2007 (HMBV) (NCT00062673),114,duloxetine,75,207,2004,1,2,0
+Raskin2007 (HMBV) (NCT00062673),114,placebo,19,104,2004,1,2,0
+Perahia2008b (HMCQ) (NCT00067912),115,duloxetine,79,164,2004,1,2,0
+Perahia2008b (HMCQ) (NCT00067912),115,venlafaxine,170,340,2004,1,2,0
+"Nierenberg2007 (F1J-MC-HMCR, NCT00073411, Pigott2007)",116,escitalopram,121,274,2005,1,1,0
+"Nierenberg2007 (F1J-MC-HMCR, NCT00073411, Pigott2007)",116,duloxetine,128,273,2005,1,1,0
+"Nierenberg2007 (F1J-MC-HMCR, NCT00073411, Pigott2007)",116,placebo,50,137,2005,1,1,0
+Lee2007 (F1J-AA-HMCV) (NCT00489775),117,duloxetine,144,238,2005,1,2,0
+Lee2007 (F1J-AA-HMCV) (NCT00489775),117,paroxetine,157,240,2005,1,2,0
+Perahia2006 (HMAY - Study Group B),118,duloxetine,129,196,2006,1,2,0
+Perahia2006 (HMAY - Study Group B),118,paroxetine,59,97,2006,1,1,0
+Perahia2006 (HMAY - Study Group B),118,placebo,51,99,2006,1,1,0
+Higuchi2009,119,duloxetine,80,150,2009,0,1,0
+Higuchi2009,119,paroxetine,78,148,2009,0,1,0
+Higuchi2009,119,placebo,56,146,2009,0,1,0
+Cutler2009,120,duloxetine,70,151,2009,0,1,0
+Cutler2009,120,placebo,55,157,2009,0,1,0
+Oakes2012a (NCT00536471),122,duloxetine,113,257,2008,1,1,0
+Oakes2012a (NCT00536471),122,placebo,45,127,2008,1,1,0
+Oakes2012b (NCT00536471),123,duloxetine,117,261,2008,1,1,0
+Oakes2012b (NCT00536471),123,placebo,44,131,2008,1,1,0
+Hao2014,125,duloxetine,86,140,2012,0,2,0
+Hao2014,125,paroxetine,74,141,2012,0,2,0
+Burke2002 (SCT-MD-01),126,escitalopram,102,252,2000,1,2,0
+Burke2002 (SCT-MD-01),126,citalopram,48,127,2000,1,2,0
+Burke2002 (SCT-MD-01),126,placebo,32,127,2000,1,2,0
+Gorman2002 (SCT-MD-02),127,escitalopram,51,129,2000,1,2,0
+Gorman2002 (SCT-MD-02),127,citalopram,54,128,2000,1,2,0
+Gorman2002 (SCT-MD-02),127,placebo,47,129,2000,1,2,0
+Lepola2003 (ESC 99003),128,escitalopram,95,156,2000,1,1,0
+Lepola2003 (ESC 99003),128,citalopram,79,161,2000,1,1,0
+Lepola2003 (ESC 99003),128,placebo,67,154,2000,1,1,0
+Kennedy2005 (SCT-MD-16),130,escitalopram,61,102,2001,1,2,1
+Kennedy2005 (SCT-MD-16),130,fluoxetine,63,103,2001,1,2,1
+Ninan2003 (poster SCT-MD-26),131,escitalopram,61,154,2002,1,2,1
+Ninan2003 (poster SCT-MD-26),131,placebo,48,155,2002,1,2,1
+Bielski2004 (SCT-MD-12),132,escitalopram,59,101,2002,1,1,0
+Bielski2004 (SCT-MD-12),132,venlafaxine,47,101,2002,1,1,0
+Montgomery2004a (Study 99067),133,escitalopram,113,148,2002,1,1,0
+Montgomery2004a (Study 99067),133,venlafaxine,113,145,2002,1,1,0
+Wade2002 (ESC Study 99001 - FDA),134,placebo,79,189,2002,1,1,0
+Wade2002 (ESC Study 99001 - FDA),134,escitalopram,104,191,2002,1,1,0
+Ventura2007 (SCT-MD-18),135,escitalopram,75,107,2003,1,1,0
+Ventura2007 (SCT-MD-18),135,sertraline,74,108,2003,1,1,0
+Lalit2004,136,escitalopram,62,69,2004,0,2,0
+Lalit2004,136,citalopram,64,74,2004,0,2,0
+Lalit2004,136,sertraline,69,71,2004,0,2,0
+Bose2008 (SCT-MD-13),137,escitalopram,50,132,2004,1,2,1
+Bose2008 (SCT-MD-13),137,placebo,50,135,2004,1,2,1
+Alexopoulos2004 (poster SCT-MD-27),138,escitalopram,68,136,2004,1,2,0
+Alexopoulos2004 (poster SCT-MD-27),138,sertraline,74,138,2004,1,2,0
+Alexopoulos2004 (poster SCT-MD-27),138,placebo,54,135,2004,1,2,0
+Colonna2005 (Study 99022),139,escitalopram,104,175,2005,1,1,0
+Colonna2005 (Study 99022),139,citalopram,96,182,2005,1,1,0
+Moore2005,140,escitalopram,105,142,2005,0,1,0
+Moore2005,140,citalopram,87,152,2005,0,1,0
+Kasper2005a (Study 99024),141,escitalopram,78,174,2005,1,2,0
+Kasper2005a (Study 99024),141,fluoxetine,61,164,2005,1,2,0
+Kasper2005a (Study 99024),141,placebo,85,180,2005,1,2,0
+Baldwin2006b (Study 99505),142,paroxetine,111,159,2006,1,1,0
+Baldwin2006b (Study 99505),142,escitalopram,112,166,2006,1,1,0
+Wade2007 (Study 10990),143,escitalopram,94,144,2006,1,1,0
+Wade2007 (Study 10990),143,duloxetine,81,151,2006,1,1,0
+Khan2007 (SCT-MD-23) (NCT00108979),144,escitalopram,61,140,2006,1,2,0
+Khan2007 (SCT-MD-23) (NCT00108979),144,duloxetine,52,138,2006,1,2,0
+Boulenger2006 (Study 10351),145,escitalopram,144,232,2006,1,2,0
+Boulenger2006 (Study 10351),145,paroxetine,128,227,2006,1,2,0
+Li2006,146,escitalopram,22,28,2006,0,2,0
+Li2006,146,citalopram,19.012,28,2006,0,2,0
+Yevtushenko2007,147,escitalopram,103,109,2007,0,1,0
+Yevtushenko2007,147,citalopram,90,110,2007,0,1,0
+Mao2008,148,fluoxetine,89,117,2008,0,1,0
+Mao2008,148,escitalopram,94,123,2008,0,1,0
+Hu2009,149,escitalopram,21,25,2009,0,2,0
+Hu2009,149,citalopram,18.998,23,2009,0,2,0
+Jiang2009,150,escitalopram,30,32,2009,0,1,0
+Jiang2009,150,citalopram,31,32,2009,0,1,0
+Ou2010,151,citalopram,87,120,2010,0,1,0
+Ou2010,151,escitalopram,83,120,2010,0,1,0
+Li2010,152,escitalopram,19.9992,24,2010,0,2,0
+Li2010,152,citalopram,18.9992,24,2010,0,2,0
+Hirayasu2011a,153,escitalopram,133,205,2011,0,1,0
+Hirayasu2011a,153,placebo,66,105,2011,0,1,0
+Hirayasu2011b,154,placebo,45,124,2011,0,1,0
+Hirayasu2011b,154,escitalopram,115,240,2011,0,1,0
+Hirayasu2011b,154,paroxetine,64,121,2011,0,1,0
+Dube2010 (NCT00420004),155,escitalopram,29,62,2008,0,2,0
+Dube2010 (NCT00420004),155,placebo,59,138,2008,0,2,0
+Lv2013,156,escitalopram,16,20,2013,0,2,0
+Lv2013,156,citalopram,17,22,2013,0,2,0
+Kasper2012 (NCT00807248),157,escitalopram,97,140,2008,0,2,0
+Kasper2012 (NCT00807248),157,placebo,33,71,2008,0,2,0
+"Wang 2014 (EUCTR2005-005052-40, NCT00351169, D1448C00004)",158,escitalopram,91,157,2007,0,1,0
+"Wang 2014 (EUCTR2005-005052-40, NCT00351169, D1448C00004)",158,placebo,78,157,2007,0,1,0
+Griebel2012 (Study DF15878) (NCT00358631),160,escitalopram,30,84,2007,0,2,0
+Griebel2012 (Study DF15878) (NCT00358631),160,placebo,22,76,2007,0,2,0
+NCT01020799,161,escitalopram,14,50,2009,1,1,1
+NCT01020799,161,placebo,31,99,2009,1,1,1
+SCT-MD-49 (NCT00668525),162,escitalopram,116,325,2009,1,2,1
+SCT-MD-49 (NCT00668525),162,placebo,54,220,2009,1,1,1
+Mischoulon2014 (NCT00101452),163,escitalopram,22,69,2009,1,2,0
+Mischoulon2014 (NCT00101452),163,placebo,18,65,2009,1,2,0
+Study 19 (FDA) (Fabre1985),164,fluoxetine,6,22,1985,1,2,1
+Study 19 (FDA) (Fabre1985),164,placebo,3,25,1985,1,2,1
+Study 25 (FDA) (Rickels1986),165,fluoxetine,5,18,1986,1,2,1
+Study 25 (FDA) (Rickels1986),165,placebo,7,24,1986,1,2,1
+Study 62a (FDA) - MILD depression (Dunlop1990),166,fluoxetine,114,316,1990,1,2,1
+Study 62a (FDA) - MILD depression (Dunlop1990),166,placebo,21,56,1990,1,2,1
+Study 62b (FDA) - MODERATE depression,167,fluoxetine,104,308,1987,1,2,1
+Study 62b (FDA) - MODERATE depression,167,placebo,11,48,1987,1,2,1
+Chouinard1985,168,fluoxetine,8,25,1985,0,2,0
+Chouinard1985,168,amitriptyline,15,28,1985,0,2,0
+Cohn1985a,169,fluoxetine,38,54,1985,0,2,0
+Cohn1985a,169,placebo,12,58,1985,0,2,0
+Stark1985 (Study 27 - FDA),171,fluoxetine,73,185,1985,1,2,0
+Stark1985 (Study 27 - FDA),171,placebo,44,169,1985,1,2,0
+Byerley1988,173,placebo,4,29,1988,0,1,0
+Byerley1988,173,fluoxetine,14,32,1988,0,1,0
+DeRonchi1998,174,fluoxetine,16,32,1988,0,2,0
+DeRonchi1998,174,amitriptyline,18,33,1988,0,2,0
+Debus1988,175,fluoxetine,9,22,1988,0,2,0
+Debus1988,175,trazodone,9,21,1988,0,2,0
+Laakman1988  ,177,fluoxetine,55,63,1988,0,2,0
+Laakman1988  ,177,amitriptyline,57,65,1988,0,2,0
+Feighner1989a,178,placebo,9,59,1989,0,2,0
+Feighner1989a,178,fluoxetine,15,62,1989,0,2,0
+Falk1989,179,trazodone,4,13,1989,0,2,0
+Falk1989,179,fluoxetine,8,14,1989,0,2,0
+Fawcett1989,180,amitriptyline,7,20,1989,0,2,0
+Fawcett1989,180,fluoxetine,8,20,1989,0,2,0
+Manna1989,181,fluoxetine,12,15,1989,0,2,0
+Manna1989,181,clomipramine,11,15,1989,0,2,0
+Ginestet1989,182,fluoxetine,22,28,1989,0,2,0
+Ginestet1989,182,clomipramine,18,26,1989,0,2,0
+Ropert1989  ,183,fluoxetine,42,71,1989,0,2,0
+Ropert1989  ,183,clomipramine,31,72,1989,0,2,0
+Fudge1990,184,fluoxetine,10,21,1990,0,2,0
+Fudge1990,184,trazodone,13,17,1990,0,2,0
+Kerkhofs1990,185,fluoxetine,6,16,1990,0,2,0
+Kerkhofs1990,185,amitriptyline,6,18,1990,0,2,0
+Noguera1991,186,clomipramine,32,60,1991,0,2,0
+Noguera1991,186,fluoxetine,37,60,1991,0,2,0
+Keegan1991,187,fluoxetine,12,20,1991,0,1,0
+Keegan1991,187,amitriptyline,16,22,1991,0,1,0
+Preskorn1991,188,fluoxetine,12,30,1991,0,2,0
+Preskorn1991,188,amitriptyline,8,31,1991,0,2,0
+Beasley1991,189,trazodone,34,61,1991,0,2,0
+Beasley1991,189,fluoxetine,33,65,1991,0,2,0
+Judd1993,190,fluoxetine,15,30,1993,0,2,0
+Judd1993,190,amitriptyline,12,28,1993,0,2,0
+Heiligenstein1994,191,fluoxetine,25,46,1994,0,1,0
+Heiligenstein1994,191,placebo,17,43,1994,0,1,0
+Lam1995,192,fluoxetine,23,36,1995,0,2,0
+Lam1995,192,placebo,13,32,1995,0,2,0
+Tollefson1995,193,fluoxetine,125,335,1995,0,2,0
+Tollefson1995,193,placebo,91,336,1995,0,2,0
+Sramek1995,194,fluoxetine,14,72,1995,0,1,0
+Sramek1995,194,placebo,10,72,1995,0,1,0
+Demyttenaere1998  ,195,amitriptyline,18,31,1998,0,2,0
+Demyttenaere1998  ,195,fluoxetine,22,35,1998,0,2,0
+Marchesi1998  ,196,fluoxetine,45,67,1998,0,1,0
+Marchesi1998  ,196,amitriptyline,59,75,1998,0,1,0
+OntiverosSanchez1998  ,197,fluoxetine,7,21,1998,0,2,0
+OntiverosSanchez1998  ,197,amitriptyline,6,21,1998,0,2,0
+Versiani1999,198,fluoxetine,57,77,1999,0,1,0
+Versiani1999,198,amitriptyline,58,80,1999,0,1,0
+Corrigan2000  ,199,fluoxetine,17,35,2000,0,2,0
+Corrigan2000  ,199,placebo,9,35,2000,0,2,0
+McGrath2000,200,fluoxetine,25,49,2000,0,2,0
+McGrath2000,200,placebo,12,52,2000,0,2,0
+Fava2002,201,sertraline,70,96,2002,0,2,0
+Fava2002,201,fluoxetine,57,92,2002,0,2,0
+Fava2002,201,paroxetine,64,96,2002,0,2,0
+LopezRodriguez2004,202,fluoxetine,6,10,2004,0,2,0
+LopezRodriguez2004,202,placebo,3,10,2004,0,2,0
+NCT01808612,205,fluoxetine,55,253,2013,1,1,1
+NCT01808612,205,placebo,72,260,2013,1,1,1
+Fava2005,206,placebo,15,43,2005,0,2,0
+Fava2005,206,fluoxetine,15,47,2005,0,2,0
+Bjerkenstedt2005  ,207,fluoxetine,20,57,2005,0,1,0
+Bjerkenstedt2005  ,207,placebo,23,58,2005,0,1,0
+Moreno2005,208,fluoxetine,11,20,2005,0,2,0
+Moreno2005,208,placebo,11,26,2005,0,2,0
+DeWilde1983a,209,fluvoxamine,16,22,1983,0,1,0
+DeWilde1983a,209,clomipramine,17,21,1983,0,1,0
+Amin1984,211,fluvoxamine,77,161,1984,0,2,0
+Amin1984,211,placebo,44,150,1984,0,2,0
+Norton1984,212,fluvoxamine,13,35,1984,0,1,0
+Norton1984,212,placebo,10,25,1984,0,1,0
+Dominguez1985,213,fluvoxamine,8,35,1985,1,2,0
+Dominguez1985,213,placebo,8,31,1985,1,2,0
+Cassano1986,214,fluvoxamine,84,161,1986,0,2,0
+Cassano1986,214,placebo,53,149,1986,0,2,0
+Lapierre1987,216,fluvoxamine,14,22,1987,0,2,0
+Lapierre1987,216,placebo,5,20,1987,0,2,0
+Feighner1989b,217,fluvoxamine,13,31,1989,0,1,0
+Feighner1989b,217,placebo,4,19,1989,0,1,0
+Lydiard1989,218,fluvoxamine,9,18,1989,0,2,0
+Lydiard1989,218,placebo,5,18,1989,0,2,0
+Mar-90,219,fluvoxamine,7,18,1990,0,1,0
+Mar-90,219,placebo,3,18,1990,0,1,0
+Remick1994,220,amitriptyline,5,17,1994,0,2,0
+Remick1994,220,fluvoxamine,9,16,1994,0,2,0
+Nemeroff1995,221,fluvoxamine,27,49,1995,0,2,0
+Nemeroff1995,221,sertraline,23,48,1995,0,2,0
+Ottevanger1995,222,fluvoxamine,13,20,1995,0,1,0
+Ottevanger1995,222,clomipramine,16,20,1995,0,1,0
+Rapaport1996,223,fluvoxamine,30,51,1996,0,1,0
+Rapaport1996,223,fluoxetine,29,49,1996,0,1,0
+Claghorn1996,224,fluvoxamine,21,50,1996,0,2,0
+Claghorn1996,224,placebo,12,50,1996,0,2,0
+Fabre1996,225,fluvoxamine,23,50,1996,0,1,0
+Fabre1996,225,placebo,15,50,1996,0,1,0
+Kiev1997,226,fluvoxamine,17,30,1997,0,2,0
+Kiev1997,226,paroxetine,16,30,1997,0,2,0
+Murasaki1998,227,fluvoxamine,51,113,1998,0,1,0
+Murasaki1998,227,amitriptyline,54,122,1998,0,1,0
+Dalery2003,228,fluvoxamine,53,90,2003,0,2,0
+Dalery2003,228,fluoxetine,54,94,2003,0,2,0
+Rossini2005,229,fluvoxamine,29,40,2005,0,1,0
+Rossini2005,229,sertraline,28,48,2005,0,1,0
+Harris1991,230,fluvoxamine,13,35,1991,0,2,0
+Harris1991,230,amitriptyline,21,34,1991,0,2,0
+Roth1990,231,fluvoxamine,17,30,1990,0,2,0
+Roth1990,231,placebo,11,30,1990,0,2,0
+"Montgomery2013 (F02695LP202, EudraCT2006-002404-34)",233,placebo,107,281,2007,1,1,0
+"Montgomery2013 (F02695LP202, EudraCT2006-002404-34)",233,levomilnacipran,155,282,2007,1,1,0
+"Gommoll2014 (LVM-MD-02, NCT00969150)",234,placebo,63,182,2010,1,1,0
+"Gommoll2014 (LVM-MD-02, NCT00969150)",234,levomilnacipran,67,175,2010,1,1,0
+"Asnis2013 (LVM-MD-01, NCT00969709)",235,placebo,51,179,2011,1,2,0
+"Asnis2013 (LVM-MD-01, NCT00969709)",235,levomilnacipran,203,545,2011,1,2,0
+"Sambunaris2014 (LVM-MD-03, NCT01034462)",236,placebo,63,220,2011,1,1,0
+"Sambunaris2014 (LVM-MD-03, NCT01034462)",236,levomilnacipran,90,222,2011,1,1,0
+"Bakish2014 (LVM-MD-10, NCT01377194)",237,placebo,57,189,2012,1,1,0
+"Bakish2014 (LVM-MD-10, NCT01377194)",237,levomilnacipran,156,379,2012,1,1,0
+Ansseau1989a,239,milnacipran,53,95,1989,0,2,0
+Ansseau1989a,239,amitriptyline,35,49,1989,0,2,0
+Ansseau1989b,240,milnacipran,28,44,1989,0,1,0
+Ansseau1989b,240,amitriptyline,22,43,1989,0,1,0
+Ansseau1991,241,fluvoxamine,22,41,1991,0,2,0
+Ansseau1991,241,milnacipran,56,85,1991,0,2,0
+Ansseau1994b,242,milnacipran,32,97,1994,0,1,0
+Ansseau1994b,242,fluoxetine,43,93,1994,0,1,0
+Leinonen1997,243,milnacipran,32,52,1997,0,1,0
+Leinonen1997,243,clomipramine,32,55,1997,0,1,0
+Guelfi1998,244,milnacipran,109,200,1998,0,1,0
+Guelfi1998,244,fluoxetine,51,100,1998,0,1,0
+Clerc2001,245,fluvoxamine,32,56,2001,0,2,0
+Clerc2001,245,milnacipran,40,57,2001,0,2,0
+Yang2003,246,milnacipran,4,27,2003,0,2,0
+Yang2003,246,sertraline,2,26,2003,0,2,0
+Sechter2004,247,milnacipran,86,149,2004,0,2,0
+Sechter2004,247,paroxetine,91,153,2004,0,2,0
+Kamijima2013 (japicCTI-090733),248,milnacipran,338,604,2013,0,1,0
+Kamijima2013 (japicCTI-090733),248,paroxetine,171,301,2013,0,1,0
+MIR 003-003 (FDA),249,mirtazapine,18,45,1996,1,2,1
+MIR 003-003 (FDA),249,placebo,14,45,1996,1,2,1
+MIR 003-020 (FDA),250,mirtazapine,17,44,1996,1,2,1
+MIR 003-020 (FDA),250,amitriptyline,14,43,1996,1,2,1
+MIR 003-020 (FDA),250,placebo,5,43,1996,1,2,1
+MIR 003-021 (FDA),251,mirtazapine,22,50,1996,1,2,1
+MIR 003-021 (FDA),251,amitriptyline,31,50,1996,1,2,1
+MIR 003-021 (FDA),251,placebo,21,50,1996,1,2,1
+Vartiainen1994 (MIR 84023 FDA),252,mirtazapine,19,60,1994,1,2,0
+Vartiainen1994 (MIR 84023 FDA),252,placebo,15,57,1994,1,2,0
+Smith1990 (MIR 003-024 FDA),254,mirtazapine,25,50,1990,1,2,0
+Smith1990 (MIR 003-024 FDA),254,amitriptyline,26,50,1990,1,2,0
+Smith1990 (MIR 003-024 FDA),254,placebo,14,50,1990,1,2,0
+Bremner1995(MIR 003-022 - FDA),255,amitriptyline,29,50,1995,1,2,0
+Bremner1995(MIR 003-022 - FDA),255,placebo,17,50,1995,1,2,0
+Bremner1995(MIR 003-022 - FDA),255,mirtazapine,34,50,1995,1,2,0
+Claghorn1995 (MIR 003-002 (FDA),256,mirtazapine,21,45,1995,1,2,0
+Claghorn1995 (MIR 003-002 (FDA),256,placebo,11,45,1995,1,2,0
+Halikas1995 (MIR 003-023 - FDA),257,mirtazapine,25,50,1995,1,2,0
+Halikas1995 (MIR 003-023 - FDA),257,trazodone,20,50,1995,1,2,0
+Halikas1995 (MIR 003-023 - FDA),257,placebo,17,50,1995,1,2,0
+vanMoffaert1995b,258,mirtazapine,61,100,1995,0,2,0
+vanMoffaert1995b,258,trazodone,51,100,1995,0,2,0
+Wheatley1998,262,mirtazapine,39,66,1996,0,1,0
+Wheatley1998,262,fluoxetine,28,67,1996,0,1,0
+Leinonen1999 (Agren1995),263,mirtazapine,116,137,1999,0,1,0
+Leinonen1999 (Agren1995),263,citalopram,117,133,1999,0,1,0
+Benkert2000 (E-1559),264,mirtazapine,74,139,2000,1,2,0
+Benkert2000 (E-1559),264,paroxetine,66,136,2000,1,2,0
+Schatzberg2002 (003-901),265,mirtazapine,72,128,2002,1,1,0
+Schatzberg2002 (003-901),265,paroxetine,60,126,2002,1,1,0
+Hong2003 (22521),266,mirtazapine,35,66,2000,1,2,0
+Hong2003 (22521),266,fluoxetine,30,66,2000,1,2,0
+"Behnke2003 (E-1690, Kjernisted2002)",267,mirtazapine,117,176,2003,1,2,0
+"Behnke2003 (E-1690, Kjernisted2002)",267,sertraline,114,170,2003,1,2,0
+Wade2003 (E-1721),268,mirtazapine,35,99,2003,1,1,0
+Wade2003 (E-1721),268,paroxetine,40,98,2003,1,1,0
+Winokur2003,269,mirtazapine,8,8,2003,0,1,0
+Winokur2003,269,fluoxetine,6,12,2003,0,1,0
+Amini2005,270,mirtazapine,12,18,2005,0,1,0
+Amini2005,270,fluoxetine,8,18,2005,0,1,0
+Versiani2005,271,mirtazapine,106,145,2005,0,1,0
+Versiani2005,271,fluoxetine,104,149,2005,0,1,0
+Szegedi2006,272,mirtazapine,72,130,2006,0,1,0
+Szegedi2006,272,venlafaxine,62,128,2006,0,1,0
+Kinoshita2009,273,mirtazapine,131,211,2009,0,1,0
+Kinoshita2009,273,placebo,37,70,2009,0,1,0
+003-048,274,mirtazapine,78,210,2001,1,2,1
+003-048,274,fluoxetine,80,210,2001,1,2,1
+003-048,274,placebo,24,72,2001,1,2,1
+003-008 (FDA),275,mirtazapine,18,60,1990,1,2,1
+003-008 (FDA),275,placebo,7,30,1990,1,2,1
+003-042,276,mirtazapine,85,210,1998,1,2,1
+003-042,276,placebo,19,70,1998,1,2,1
+"Murasaki2010a (iQWIG22532, Schoemaker2002)",277,mirtazapine,61,104,2000,1,1,0
+"Murasaki2010a (iQWIG22532, Schoemaker2002)",277,fluvoxamine,70,105,2000,1,1,0
+"Murasaki2010b (iQWIG9902, Schoemaker2002)",278,mirtazapine,71,101,2002,1,1,0
+"Murasaki2010b (iQWIG9902, Schoemaker2002)",278,fluvoxamine,57,102,2002,1,1,0
+Benkert2006(C-1763),279,mirtazapine,70,140,2003,1,1,0
+Benkert2006(C-1763),279,venlafaxine,56,135,2003,1,1,0
+E-1569,280,mirtazapine,40,73,1996,1,1,1
+E-1569,280,paroxetine,48,75,1996,1,1,1
+"Debonnel2000 (Blier2009, iQWIG E-1639)",281,mirtazapine,4,21,2000,1,2,0
+"Debonnel2000 (Blier2009, iQWIG E-1639)",281,paroxetine,9,21,2000,1,2,0
+Armitage1997,284,nefazodone,11,22,1997,0,2,0
+Armitage1997,284,fluoxetine,11,21,1997,0,2,0
+Baldwin1996,285,nefazodone,58,105,1996,0,2,0
+Baldwin1996,285,paroxetine,58,101,1996,0,2,0
+Berlanga1997,286,nefazodone,17,37,1997,0,2,0
+Berlanga1997,286,fluoxetine,18,37,1997,0,2,0
+D'Amico1990 (FDA 030-A2-0007),288,nefazodone,16,47,1990,1,2,0
+D'Amico1990 (FDA 030-A2-0007),288,placebo,16,47,1990,1,2,0
+Feiger1996,289,nefazodone,42,78,1996,0,2,0
+Feiger1996,289,sertraline,41,82,1996,0,2,0
+Feighner1998,290,nefazodone,29,61,1998,0,2,0
+Feighner1998,290,placebo,17,59,1998,0,2,0
+Fontaine1994 (FDA 03A0A-003),291,nefazodone,25,44,1994,1,2,0
+Fontaine1994 (FDA 03A0A-003),291,placebo,14,45,1994,1,2,0
+Gillin1997,292,nefazodone,12,24,1997,0,1,0
+Gillin1997,292,fluoxetine,8,20,1997,0,1,0
+Hicks2002,293,nefazodone,11,20,2002,0,1,0
+Hicks2002,293,paroxetine,16,20,2002,0,1,0
+Mendels1995 (FDA 03A0A-004B),294,nefazodone,45,80,1995,1,2,0
+Mendels1995 (FDA 03A0A-004B),294,placebo,29,80,1995,1,2,0
+Rickels1994 ( FDA CN104-005),295,nefazodone,42,96,1994,1,2,0
+Rickels1994 ( FDA CN104-005),295,placebo,29,95,1994,1,2,0
+Rickels1995 (FDA CN104-006-1),296,nefazodone,26,45,1995,1,2,0
+Rickels1995 (FDA CN104-006-1),296,placebo,23,44,1995,1,2,0
+Cohn1996 (FDA CN104-006-2),297,nefazodone,25,43,1996,1,2,0
+Cohn1996 (FDA CN104-006-2),297,placebo,15,43,1996,1,2,0
+03A0A-004A (FDA),300,nefazodone,29,80,1994,1,2,1
+03A0A-004A (FDA),300,placebo,28,80,1994,1,2,1
+PAR 29060.318 (HP/82/64A),305,paroxetine,4,9,1983,1,1,1
+PAR 29060.318 (HP/82/64A),305,amitriptyline,3,12,1983,1,1,1
+PAR 29060.310 (HP 81/85A),307,paroxetine,2,10,1984,1,2,1
+PAR 29060.310 (HP 81/85A),307,amitriptyline,5,13,1984,1,2,1
+PAR 01 001 (GSK & FDA),309,paroxetine,11,25,1985,1,2,0
+PAR 01 001 (GSK & FDA),309,placebo,8,25,1985,1,2,0
+PAR 29060/281 ,311,paroxetine,30,82,1985,1,2,1
+PAR 29060/281 ,311,amitriptyline,43,80,1985,1,2,1
+PAR MDUK 032,312,paroxetine,15,29,1986,1,2,1
+PAR MDUK 032,312,amitriptyline,14,30,1986,1,2,1
+PAR 279 MDUK,313,paroxetine,12,19,1986,1,2,1
+PAR 279 MDUK,313,placebo,5,10,1986,1,2,1
+"Dunbar1993a (Claghorn1992, Rickels1989, Rickels1992, PAR 02-001 - FDA)",314,paroxetine,27,55,1986,1,2,0
+"Dunbar1993a (Claghorn1992, Rickels1989, Rickels1992, PAR 02-001 - FDA)",314,placebo,16,56,1986,1,2,0
+"Dunbar1993b  (Claghorn1992, PAR 02-002 - FDA)",315,paroxetine,15,36,1986,1,2,0
+"Dunbar1993b  (Claghorn1992, PAR 02-002 - FDA)",315,placebo,8,36,1986,1,2,0
+"Dunbar1993c  (Smith1992, PAR 02-003 - FDA)",316,paroxetine,13,39,1986,1,2,0
+"Dunbar1993c  (Smith1992, PAR 02-003 - FDA)",316,placebo,10,38,1986,1,2,0
+Feighner1993a (Feighner 1989c PAR 03 001 - FDA),317,paroxetine,20,40,1986,1,2,0
+Feighner1993a (Feighner 1989c PAR 03 001 - FDA),317,placebo,5,40,1986,1,2,0
+Feighner1993b (Cohn1990 Cohn1992 PAR 03 002 - FDA),318,paroxetine,9,40,1986,1,2,0
+Feighner1993b (Cohn1990 Cohn1992 PAR 03 002 - FDA),318,placebo,6,40,1986,1,2,0
+Feighner1993c (PAR 03 003 - FDA),319,paroxetine,17,41,1986,1,2,0
+Feighner1993c (PAR 03 003 - FDA),319,placebo,14,42,1986,1,2,0
+Feighner1993d (Shrivastava1992 PAR 03 004 - FDA),320,paroxetine,16,40,1986,1,2,0
+Feighner1993d (Shrivastava1992 PAR 03 004 - FDA),320,placebo,9,40,1986,1,2,0
+Feighner1993e (Peselow1989 PAR 03 005 - FDA),321,paroxetine,16,40,1986,1,2,0
+Feighner1993e (Peselow1989 PAR 03 005 - FDA),321,placebo,12,42,1986,1,2,0
+Feighner1993f (Fabre1992 PAR 03 006 - FDA),322,paroxetine,12,40,1986,1,2,0
+Feighner1993f (Fabre1992 PAR 03 006 - FDA),322,placebo,3,40,1986,1,2,0
+29060 07 001,323,paroxetine,5,13,1987,1,2,1
+29060 07 001,323,placebo,4,12,1987,1,2,1
+Kuhs1989 (MDUK_29060_III_85_043),324,paroxetine,7,12,1987,1,2,0
+Kuhs1989 (MDUK_29060_III_85_043),324,amitriptyline,4,12,1987,1,2,0
+"Dunbar1993d (Kiev1992, PAR 02-004 - FDA)",325,paroxetine,15,40,1987,1,2,0
+"Dunbar1993d (Kiev1992, PAR 02-004 - FDA)",325,placebo,7,41,1987,1,2,0
+Guillibert1989 (PAR 290 MDF 29060 1727 M),326,clomipramine,28,39,1988,1,2,0
+Guillibert1989 (PAR 290 MDF 29060 1727 M),326,paroxetine,26,40,1988,1,2,0
+Pelicier1993 (PAR MDED/29060/III/86/1728M291),327,clomipramine,25,42,1988,1,2,0
+Pelicier1993 (PAR MDED/29060/III/86/1728M291),327,paroxetine,29,41,1988,1,2,0
+Miller1989 (MDUK/29060/III/82/006 (PAR-274) PAR UK 06 - FDA),328,paroxetine,3,22,1988,1,2,0
+Miller1989 (MDUK/29060/III/82/006 (PAR-274) PAR UK 06 - FDA),328,placebo,5,25,1988,1,2,0
+MDF/29060/III/070/88/MC,329,paroxetine,22,32,1989,1,2,1
+MDF/29060/III/070/88/MC,329,clomipramine,12,30,1989,1,2,1
+"Rouillon1991 (Limosin2006, 029060/1/CPMS 069 1991)",330,paroxetine,27,45,1989,1,2,0
+"Rouillon1991 (Limosin2006, 029060/1/CPMS 069 1991)",330,clomipramine,23,47,1989,1,2,0
+Geretsegger1995 (MY-060/BRL-029060/1),331,paroxetine,21,44,1990,1,2,0
+Geretsegger1995 (MY-060/BRL-029060/1),331,amitriptyline,24,47,1990,1,2,0
+DUAG1990,332,paroxetine,23,62,1990,0,2,0
+DUAG1990,332,clomipramine,31,58,1990,0,2,0
+MY-1045/BRL-029060/1 (PAR 128),333,paroxetine,217,357,1991,1,2,1
+MY-1045/BRL-029060/1 (PAR 128),333,fluoxetine,244,351,1991,1,2,1
+MY-1045/BRL-029060/1 (PAR 128),333,placebo,69,140,1991,1,2,1
+MY-1043/BRL-029060/115,334,paroxetine,152,284,1991,1,2,1
+MY-1043/BRL-029060/115,334,fluoxetine,167,289,1991,1,2,1
+MY-1043/BRL-029060/115,334,placebo,60,118,1991,1,2,1
+Tignol1993 (29060/087),335,paroxetine,53,89,1991,1,1,0
+Tignol1993 (29060/087),335,fluoxetine,54,87,1991,1,1,0
+Schoene1993 (Geretsegger1994 MY1021/BRC),336,paroxetine,19,54,1991,1,1,0
+Schoene1993 (Geretsegger1994 MY1021/BRC),336,fluoxetine,8,52,1991,1,1,0
+Ontiveros1994 (MY-0144/BRL 29060/1/CPMS-135 (PAR135)),337,paroxetine,41,60,1992,1,1,0
+Ontiveros1994 (MY-0144/BRL 29060/1/CPMS-135 (PAR135)),337,fluoxetine,35,62,1992,1,1,0
+Bignamini1992 (PAR 29060/078),338,paroxetine,82,156,1992,1,1,0
+Bignamini1992 (PAR 29060/078),338,amitriptyline,91,153,1992,1,1,0
+Hutchinson1992,339,amitriptyline,15,32,1992,0,2,0
+Hutchinson1992,339,paroxetine,34,58,1992,0,2,0
+Staner1995 (063),340,paroxetine,7,21,1992,1,2,0
+Staner1995 (063),340,amitriptyline,9,19,1992,1,2,0
+Dunner1992 (PAR 29060.09),341,paroxetine,135,316,1992,1,2,0
+Dunner1992 (PAR 29060.09),341,placebo,20,53,1992,1,2,0
+Ansseau1994a (MY-1005/BRL-029060/1/CPMS-112),342,paroxetine,24,55,1992,1,2,0
+Ansseau1994a (MY-1005/BRL-029060/1/CPMS-112),342,fluvoxamine,24,65,1992,1,2,0
+DeWilde1993,343,paroxetine,25,49,1993,0,1,0
+DeWilde1993,343,fluoxetine,26,50,1993,0,1,0
+Gagiano1993,344,paroxetine,30,45,1993,0,1,0
+Gagiano1993,344,fluoxetine,27,45,1993,0,1,0
+MY-1042/BRL-029060/CPMS-251,345,paroxetine,56,125,1993,1,2,1
+MY-1042/BRL-029060/CPMS-251,345,placebo,44,129,1993,1,2,1
+Edwards1989 (MD/PAR/009 PAR-276),346,paroxetine,7,21,1989,1,2,0
+Edwards1989 (MD/PAR/009 PAR-276),346,placebo,3,21,1989,1,2,0
+29060/356,347,paroxetine,33,68,1994,1,2,1
+29060/356,347,fluoxetine,32,70,1994,1,2,1
+SER-CHN-1,348,paroxetine,94,113,1994,1,1,1
+SER-CHN-1,348,amitriptyline,80,118,1994,1,1,1
+"Moller1993 (Stuppaeck1994, MY-059.073/29060/1)",350,paroxetine,43,78,1989,1,2,0
+"Moller1993 (Stuppaeck1994, MY-059.073/29060/1)",350,amitriptyline,46,75,1989,1,2,0
+Christiansen1996,351,paroxetine,46,71,1996,0,2,0
+Christiansen1996,351,amitriptyline,48,73,1996,0,2,0
+Golden2002a (29060/448),352,paroxetine,106,212,1997,1,2,0
+Golden2002a (29060/448),352,placebo,42,103,1997,1,2,0
+Golden2002b (29060/449),353,paroxetine,117,220,1997,1,2,0
+Golden2002b (29060/449),353,placebo,47,110,1997,1,2,0
+Rapaport2003 (PAR487),354,paroxetine,142,210,1997,1,2,0
+Rapaport2003 (PAR487),354,placebo,56,109,1997,1,2,0
+Ravindran1997 (MY-1055/BRL-029060/1/CPMS-245 PAR 245),356,paroxetine,328,513,1994,1,2,0
+Ravindran1997 (MY-1055/BRL-029060/1/CPMS-245 PAR 245),356,clomipramine,317,506,1994,1,2,0
+Fava1998,357,paroxetine,32,55,1998,0,2,0
+Fava1998,357,fluoxetine,31,54,1998,0,2,0
+Fava1998,357,placebo,10,19,1998,0,2,0
+Kramer1998,358,paroxetine,33.12,72,1998,0,2,0
+Kramer1998,358,placebo,20,70,1998,0,2,0
+Chouinard1999 (29060/131),359,paroxetine,67,102,1999,1,1,0
+Chouinard1999 (29060/131),359,fluoxetine,67,101,1999,1,1,0
+Tsutsui2000,360,paroxetine,65,116,2000,0,1,0
+Tsutsui2000,360,trazodone,45,109,2000,0,1,0
+Miura2000,361,paroxetine,42,109,2000,0,1,0
+Miura2000,361,amitriptyline,54,119,2000,0,1,0
+Jefferson2000 (29060/785),362,placebo,36,105,2001,1,2,0
+Jefferson2000 (29060/785),362,paroxetine,43,103,2001,1,2,0
+Jefferson2000 (29060/785),362,citalopram,102,207,2001,1,2,0
+Trivedi2004 (29060/810),363,placebo,72,149,2002,1,2,0
+Trivedi2004 (29060/810),363,paroxetine,91,154,2002,1,2,0
+Cassano2002 (29060/421),364,paroxetine,50,123,2002,1,2,0
+Cassano2002 (29060/421),364,fluoxetine,35,119,2002,1,2,0
+NKD20006 (NCT00048204),366,paroxetine,57,125,2003,1,2,1
+NKD20006 (NCT00048204),366,placebo,59,125,2003,1,2,1
+Rapaport2009 (BRL-29060/874) (NCT00067444),367,paroxetine,100,177,2004,1,2,0
+Rapaport2009 (BRL-29060/874) (NCT00067444),367,placebo,71,180,2004,1,2,0
+Katz2004,368,paroxetine,11,28,2004,0,1,0
+Katz2004,368,placebo,6,25,2004,0,1,0
+Dimidjian2006,369,paroxetine,25,100,2006,0,2,0
+Dimidjian2006,369,placebo,12,53,2006,0,2,0
+"Higuchi2011 (PCR112810, NCT00866294)",370,paroxetine,146,244,2010,1,1,0
+"Higuchi2011 (PCR112810, NCT00866294)",370,placebo,78,172,2010,1,1,0
+Learned2012b Study2 (NCT00420641),372,paroxetine,136,166,2012,0,2,0
+Learned2012b Study2 (NCT00420641),372,placebo,97,156,2012,0,2,0
+Keller2006c (Study062) (NCT00048607),377,paroxetine,105,164,2003,0,2,0
+Keller2006c (Study062) (NCT00048607),377,placebo,76,161,2003,0,2,0
+Griebel2012b (Study DF15879) (NCT00361491),378,paroxetine,54,80,2007,0,2,0
+Griebel2012b (Study DF15879) (NCT00361491),378,placebo,40,79,2007,0,2,0
+Versiani2000 (Study 091),380,reboxetine,20,28,1990,1,2,0
+Versiani2000 (Study 091),380,placebo,5,28,1990,1,2,0
+Study 015,382,reboxetine,65,112,1992,1,1,1
+Study 015,382,placebo,58,112,1992,1,1,1
+Bosc1997b (Study 016 - Massana 1999),383,reboxetine,59,79,1993,1,2,0
+Bosc1997b (Study 016 - Massana 1999),383,fluoxetine,64,89,1993,1,2,0
+Bosc1997a (Study 014 - Andreoli2002),384,reboxetine,70,126,1997,1,2,0
+Bosc1997a (Study 014 - Andreoli2002),384,placebo,43,128,1997,1,2,0
+Bosc1997a (Study 014 - Andreoli2002),384,fluoxetine,72,127,1997,1,2,0
+Ban1998 (Study 008),385,reboxetine,50,84,1998,1,1,0
+Ban1998 (Study 008),385,placebo,30,85,1998,1,1,0
+Study 049,386,reboxetine,42,107,1998,1,2,1
+Study 049,386,placebo,35,105,1998,1,2,1
+Study 045,387,reboxetine,38,89,1999,1,2,1
+Study 045,387,placebo,39,87,1999,1,2,1
+Clayton2003 (Study 050),388,reboxetine,60,150,1999,1,2,0
+Clayton2003 (Study 050),388,placebo,63,150,1999,1,2,0
+Clayton2003 (Study 050),388,fluoxetine,79,150,1999,1,2,0
+Baldwin2006a (97-CRBX-052 - Study 052),389,reboxetine,80,159,2000,1,2,0
+Baldwin2006a (97-CRBX-052 - Study 052),389,paroxetine,100,166,2000,1,2,0
+M/2020/0046 (Study 046),390,reboxetine,144,265,2000,1,2,1
+M/2020/0046 (Study 046),390,placebo,136,257,2000,1,2,1
+M/2020/0046 (Study 046),390,paroxetine,156,265,2000,1,2,1
+M/2020/0047 (Study 047),391,reboxetine,120,258,2000,1,2,1
+M/2020/0047 (Study 047),391,placebo,108,254,2000,1,2,1
+M/2020/0047 (Study 047),391,paroxetine,128,262,2000,1,2,1
+Study 043,392,reboxetine,77,183,2006,1,2,0
+Study 043,392,citalopram,98,176,2006,1,2,0
+Schwartz2002 (iQWIG),393,reboxetine,45,80,2002,0,2,0
+Schwartz2002 (iQWIG),393,venlafaxine,48,87,2002,0,2,0
+Studie009 (CTN009-FCE20124),394,reboxetine,14,26,1989,1,1,1
+Studie009 (CTN009-FCE20124),394,placebo,9,24,1989,1,1,1
+Studie032 (M2020/0032),395,reboxetine,21,43,2001,1,1,1
+Studie032 (M2020/0032),395,fluoxetine,23,42,2001,1,1,1
+Reimherr1990 (SER 104 - FDA),396,amitriptyline,86,149,1990,1,2,0
+Reimherr1990 (SER 104 - FDA),396,placebo,49,150,1990,1,2,0
+Reimherr1990 (SER 104 - FDA),396,sertraline,77,149,1990,1,2,0
+Cohn1990,397,sertraline,84,161,1990,0,2,0
+Cohn1990,397,amitriptyline,40,80,1990,0,2,0
+Aguglia1993,398,sertraline,35,52,1993,0,2,0
+Aguglia1993,398,fluoxetine,26,56,1993,0,2,0
+Bersani1994,399,sertraline,18,34,1994,0,2,0
+Bersani1994,399,amitriptyline,17,34,1994,0,2,0
+Moon1994,400,sertraline,28,51,1994,0,2,0
+Moon1994,400,clomipramine,29,55,1994,0,2,0
+Doogan1994,401,sertraline,50,99,1994,0,1,0
+Doogan1994,401,placebo,40,101,1994,0,1,0
+Bennie1995,402,sertraline,73,142,1995,0,1,0
+Bennie1995,402,fluoxetine,63,144,1995,0,1,0
+vanMoffaert1995a,403,sertraline,49,83,1995,0,2,0
+vanMoffaert1995a,403,fluoxetine,48,82,1995,0,2,0
+Lydiard1997,404,amitriptyline,55,131,1997,0,2,0
+Lydiard1997,404,placebo,43,129,1997,0,2,0
+Lydiard1997,404,sertraline,60,132,1997,0,2,0
+Ekselius1997,405,citalopram,136,200,1997,0,1,0
+Ekselius1997,405,sertraline,139,200,1997,0,1,0
+Moller1998 (Hegerl1997),407,amitriptyline,40,79,1997,0,1,0
+Moller1998 (Hegerl1997),407,sertraline,32,81,1997,0,1,0
+Sechter1999,408,sertraline,48,118,1999,0,2,0
+Sechter1999,408,fluoxetine,35,120,1999,0,2,0
+Newhouse2000,409,sertraline,85,117,2000,0,2,0
+Newhouse2000,409,fluoxetine,84,119,2000,0,2,0
+Aberg-Wisted2000,410,paroxetine,112,177,2000,0,1,0
+Aberg-Wisted2000,410,sertraline,111,176,2000,0,1,0
+Moller2000,411,sertraline,51,116,2000,0,1,0
+Moller2000,411,amitriptyline,71,124,2000,0,1,0
+Lepine2000,412,sertraline,53,82,2000,0,1,0
+Lepine2000,412,clomipramine,54,84,2000,0,1,0
+Sir2005,413,venlafaxine,56,84,2003,0,2,0
+Sir2005,413,sertraline,56,79,2003,0,2,0
+Shelton2006 (NCT00179283),414,venlafaxine,49,78,2003,1,2,0
+Shelton2006 (NCT00179283),414,sertraline,45,82,2003,1,2,0
+Schneider2003,415,sertraline,126,371,2003,0,1,0
+Schneider2003,415,placebo,96,376,2003,0,1,0
+Moscovitch2004,416,sertraline,52,93,2004,0,1,0
+Moscovitch2004,416,placebo,47,94,2004,0,1,0
+Barber2011,417,sertraline,34,55,2007,0,2,0
+Barber2011,417,placebo,35,50,2007,0,2,0
+Binnemann2008 (NCT00143091),418,sertraline,25,43,2008,1,2,0
+Binnemann2008 (NCT00143091),418,placebo,17,39,2008,1,2,0
+Brunoni2012,419,sertraline,10,30,2012,0,1,0
+Brunoni2012,419,placebo,5,30,2012,0,1,0
+Fabre1995 (SER 103 FDA),421,sertraline,99,278,1991,1,2,0
+Fabre1995 (SER 103 FDA),421,placebo,22,91,1991,1,2,0
+SER 315 (FDA),423,sertraline,21,85,1991,1,2,1
+SER 315 (FDA),423,amitriptyline,35,77,1991,1,2,1
+SER 315 (FDA),423,placebo,25,80,1991,1,2,1
+Mao2015 (NCT01098318),424,sertraline,10,19,2013,0,2,0
+Mao2015 (NCT01098318),424,placebo,7,18,2013,0,2,0
+Mundt2012 (NCT00406952),425,sertraline,33,80,2007,0,2,0
+Mundt2012 (NCT00406952),425,placebo,20,85,2007,0,2,0
+Davidson2002 (HDTSG) (NCT00005013),426,sertraline,53,111,2002,0,1,0
+Davidson2002 (HDTSG) (NCT00005013),426,placebo,50,116,2002,0,1,0
+Olie1997,427,sertraline,70,129,1997,0,2,0
+Olie1997,427,placebo,45,129,1997,0,2,0
+Fabre1979,433,trazodone,5,13,1979,0,2,0
+Fabre1979,433,placebo,1,11,1979,0,2,0
+Feighner1980,435,trazodone,9,19,1980,0,2,0
+Feighner1980,435,placebo,0,10,1980,0,2,0
+Gerner1980,436,trazodone,2,19,1980,0,2,0
+Gerner1980,436,placebo,7,20,1980,0,2,0
+Blacker1988,441,amitriptyline,29,44,1988,0,2,0
+Blacker1988,441,trazodone,58,112,1988,0,2,0
+Altamura1989b,442,amitriptyline,21,37,1989,0,2,0
+Altamura1989b,442,trazodone,21,36,1989,0,2,0
+Kasper2005b,443,paroxetine,48,53,2005,0,2,0
+Kasper2005b,443,trazodone,48,55,2005,0,2,0
+Munizza2006,444,sertraline,37,60,2006,0,1,0
+Munizza2006,444,trazodone,46,62,2006,0,1,0
+Sheehan2009b (NCT00775203),445,trazodone,109,206,2009,1,2,0
+Sheehan2009b (NCT00775203),445,placebo,84,206,2009,1,2,0
+Rickels1982,446,amitriptyline,36,68,1982,0,2,0
+Rickels1982,446,placebo,18,68,1982,0,2,0
+Rickels1982,446,trazodone,33,66,1982,0,2,0
+Zhang2014,447,trazodone,109,192,2014,0,1,0
+Zhang2014,447,placebo,67,190,2014,0,1,0
+Cunningham1994 (VEN 600A-302 FDA),454,venlafaxine,47,76,1994,1,2,0
+Cunningham1994 (VEN 600A-302 FDA),454,trazodone,43,77,1994,1,2,0
+Cunningham1994 (VEN 600A-302 FDA),454,placebo,41,76,1994,1,2,0
+VEN 600A-303 (FDA),455,venlafaxine,29,83,1993,1,2,1
+VEN 600A-303 (FDA),455,placebo,31,82,1993,1,2,1
+VEN 600A-313 (FDA),456,venlafaxine,64,158,1993,1,2,1
+VEN 600A-313 (FDA),456,placebo,26,79,1993,1,2,1
+VEN XR 367 (FDA),457,venlafaxine,89,165,1993,1,2,1
+VEN XR 367 (FDA),457,paroxetine,35,81,1993,1,2,1
+VEN XR 367 (FDA),457,placebo,40,83,1993,1,2,1
+Clerc1994,462,fluoxetine,17,34,1994,0,2,0
+Clerc1994,462,venlafaxine,24,34,1994,0,2,0
+Schweizer1994 (VEN 600A-301 FDA),463,venlafaxine,49,76,1994,1,2,0
+Schweizer1994 (VEN 600A-301 FDA),463,placebo,37,78,1994,1,2,0
+Guelfi1995 (VEN 600A-206 FDA),464,venlafaxine,24,46,1995,1,2,0
+Guelfi1995 (VEN 600A-206 FDA),464,placebo,13,47,1995,1,2,0
+Dierick1996,465,fluoxetine,95,161,1994,0,2,0
+Dierick1996,465,venlafaxine,107,153,1994,0,2,0
+Lecrubier1997,466,venlafaxine,50,78,1997,0,2,0
+Lecrubier1997,466,placebo,38,76,1997,0,2,0
+Cunningham1997 (VEN XR 208 - FDA),467,venlafaxine,104,193,1997,1,2,0
+Cunningham1997 (VEN XR 208 - FDA),467,placebo,36,100,1997,1,2,0
+Thase1997 (VEN XR 209 FDA),468,venlafaxine,53,95,1997,1,2,0
+Thase1997 (VEN XR 209 FDA),468,placebo,30,102,1997,1,2,0
+Tylee1997,469,fluoxetine,58,170,1997,0,2,0
+Tylee1997,469,venlafaxine,67,171,1997,0,2,0
+Hackett1998,470,fluvoxamine,14,34,1998,0,2,0
+Hackett1998,470,venlafaxine,48,77,1998,0,2,0
+Costaesilva1998,471,fluoxetine,153,186,1998,0,1,0
+Costaesilva1998,471,venlafaxine,170,196,1998,0,1,0
+McPartlin1998,472,paroxetine,117,178,1998,0,2,0
+McPartlin1998,472,venlafaxine,130,183,1998,0,2,0
+Samuelian1998,473,venlafaxine,30,52,1998,0,2,0
+Samuelian1998,473,clomipramine,20,50,1998,0,2,0
+Khan1998,474,venlafaxine,139,258,1998,0,2,0
+Khan1998,474,placebo,32,95,1998,0,2,0
+Smeraldi1998,475,venlafaxine,41,55,1998,0,2,0
+Smeraldi1998,475,clomipramine,40,58,1998,0,2,0
+Smeraldi1998,475,trazodone,33,57,1998,0,2,0
+Rudolph1998 (VEN 600A-203 (FDA),476,venlafaxine,115,266,1998,1,1,0
+Rudolph1998 (VEN 600A-203 (FDA),476,placebo,27,92,1998,1,1,0
+Alves1999,477,fluoxetine,40,47,1999,0,1,0
+Alves1999,477,venlafaxine,34,40,1999,0,1,0
+Rudolph1999,478,fluoxetine,52,103,1999,0,1,0
+Rudolph1999,478,venlafaxine,54,100,1999,0,1,0
+Rudolph1999,478,placebo,41,98,1999,0,1,0
+Silverstone1999,479,fluoxetine,67,121,1999,0,2,0
+Silverstone1999,479,venlafaxine,73,128,1999,0,2,0
+Silverstone1999,479,placebo,48,119,1999,0,2,0
+Mehtonen2000,480,sertraline,41,72,2000,0,1,0
+Mehtonen2000,480,venlafaxine,49,75,2000,0,1,0
+Tzanakaki2000,481,fluoxetine,33,54,2000,0,2,0
+Tzanakaki2000,481,venlafaxine,38,55,2000,0,2,0
+Gentil2000,482,venlafaxine,43,57,2000,0,1,0
+Gentil2000,482,amitriptyline,44,59,2000,0,1,0
+Casabona2002 (0600B 428),483,paroxetine,29,56,2002,1,1,0
+Casabona2002 (0600B 428),483,venlafaxine,43,58,2002,1,1,0
+Sauer2003,484,venlafaxine,30,79,2003,0,2,0
+Sauer2003,484,amitriptyline,35,77,2003,0,2,0
+Allard2004,485,citalopram,50,75,2004,0,2,0
+Allard2004,485,venlafaxine,49,76,2004,0,2,0
+Schatzberg2006a,486,fluoxetine,37,100,2006,0,2,0
+Schatzberg2006a,486,venlafaxine,41,104,2006,0,2,0
+Schatzberg2006a,486,placebo,40,96,2006,0,2,0
+Nemeroff2007,487,fluoxetine,45,104,2007,0,2,0
+Nemeroff2007,487,venlafaxine,51,102,2007,0,2,0
+Nemeroff2007,487,placebo,37,102,2007,0,2,0
+Keller2007 (NCT00046020),488,fluoxetine,210,275,2007,0,2,0
+Keller2007 (NCT00046020),488,venlafaxine,612,821,2007,0,2,0
+Sheehan2009a,489,fluoxetine,35,99,2009,0,1,0
+Sheehan2009a,489,venlafaxine,47,95,2009,0,1,0
+Sheehan2009a,489,placebo,35,95,2009,0,1,0
+Hosseini2015 (IRCT201203048513N1.),493,venlafaxine,12,28,2011,0,2,0
+Hosseini2015 (IRCT201203048513N1.),493,citalopram,21,25,2011,0,2,0
+"Learned2012a Study1 (EUCTR2005-003401-87, SND103285, NCT00448058)",494,venlafaxine,85,134,2008,1,2,0
+"Learned2012a Study1 (EUCTR2005-003401-87, SND103285, NCT00448058)",494,placebo,67,126,2008,1,2,0
+Heller2009(NCT00909155),496,venlafaxine,9,15,2009,1,2,0
+Heller2009(NCT00909155),496,fluoxetine,8,14,2009,1,2,0
+Chang 2015,497,fluoxetine,41,58,2015,0,2,0
+Chang 2015,497,venlafaxine,38,54,2015,0,2,0
+Rickels2009 (GNSC-04-DP-02 FDA) (NCT00285376),498,vilazodone,88,205,2007,0,2,0
+Rickels2009 (GNSC-04-DP-02 FDA) (NCT00285376),498,placebo,65,205,2007,0,2,0
+Khan2011 (CLDA-07-DP-02 FDA) (NCT00683592),499,vilazodone,102,240,2009,1,1,0
+Khan2011 (CLDA-07-DP-02 FDA) (NCT00683592),499,placebo,76,241,2009,1,1,0
+FDA 244 (EMD 68 843-009),500,fluoxetine,30,89,1987,1,2,1
+FDA 244 (EMD 68 843-009),500,placebo,35,95,1987,1,2,1
+FDA 245 (EMD 68 843-010),501,fluoxetine,43,92,2011,1,2,1
+FDA 245 (EMD 68 843-010),501,placebo,42,99,2011,1,2,1
+FDA 246 (SB 659746-003),502,vilazodone,56,123,2011,1,2,1
+FDA 246 (SB 659746-003),502,citalopram,53,117,2011,1,2,1
+FDA 246 (SB 659746-003),502,placebo,54,129,2011,1,2,1
+FDA 248 (SB 659746-002),504,vilazodone,63,132,2011,1,2,1
+FDA 248 (SB 659746-002),504,placebo,62,128,2011,1,2,1
+Croft2014 (NCT01473394),505,vilazodone,146,260,2013,0,1,0
+Croft2014 (NCT01473394),505,placebo,91,258,2013,0,1,0
+Mathews2015 (NCT01473381),506,vilazodone,319,583,2013,1,1,0
+Mathews2015 (NCT01473381),506,placebo,125,290,2013,1,1,0
+Mathews2015 (NCT01473381),506,citalopram,151,289,2013,1,1,0
+"Alvarez2012 (11492A, NCT00839423)",508,placebo,42,105,2007,1,2,0
+"Alvarez2012 (11492A, NCT00839423)",508,vortioxetine,147,210,2007,1,2,0
+"Alvarez2012 (11492A, NCT00839423)",508,venlafaxine,81,114,2007,1,2,0
+"Jain2013 (303, NCT00672958)",509,placebo,132,300,2008,1,1,0
+"Jain2013 (303, NCT00672958)",509,vortioxetine,135,300,2008,1,1,0
+"Mahableshwarkar2013 (304, NCT00672620)",510,placebo,48,153,2008,1,1,0
+"Mahableshwarkar2013 (304, NCT00672620)",510,vortioxetine,58,153,2008,1,1,0
+"Mahableshwarkar2013 (304, NCT00672620)",510,duloxetine,76,152,2008,1,1,0
+"Baldwin2012 (11984A, NCT00635219)",511,placebo,68,152,2009,1,1,0
+"Baldwin2012 (11984A, NCT00635219)",511,vortioxetine,174,312,2009,1,1,0
+"Baldwin2012 (11984A, NCT00635219)",511,duloxetine,85,157,2009,1,1,0
+"Henigsberg2012 (305, NCT00735709)",512,placebo,32,140,2009,1,1,0
+"Henigsberg2012 (305, NCT00735709)",512,vortioxetine,132,280,2009,1,1,0
+"Katona2012 (12541A, NCT00811252)",513,placebo,51,145,2010,1,1,0
+"Katona2012 (12541A, NCT00811252)",513,vortioxetine,82,156,2010,1,1,0
+"Katona2012 (12541A, NCT00811252)",513,duloxetine,93,151,2010,1,1,0
+"Boulenger2014 (13267A, NCT01140906)",514,placebo,51,158,2011,1,2,0
+"Boulenger2014 (13267A, NCT01140906)",514,vortioxetine,178,303,2011,1,2,0
+"Boulenger2014 (13267A, NCT01140906)",514,duloxetine,108,147,2011,1,2,0
+"Jacobsen2015 (316, NCT01163266)",515,placebo,44,157,2012,1,1,0
+"Jacobsen2015 (316, NCT01163266)",515,vortioxetine,110,305,2012,1,1,0
+"Mahableshwarkar2015a (315, NCT01153009)",516,placebo,60,161,2012,1,1,0
+"Mahableshwarkar2015a (315, NCT01153009)",516,vortioxetine,129,301,2012,1,1,0
+"Mahableshwarkar2015a (315, NCT01153009)",516,duloxetine,80,152,2012,1,1,0
+"Mahableshwarkar2015b (317, NCT01179516)",517,placebo,49,160,2012,1,1,0
+"Mahableshwarkar2015b (317, NCT01179516)",517,vortioxetine,107,309,2012,1,1,0
+"NCT01355081(japicCTI-111492, U1111-1120-9277)",518,vortioxetine,117,242,2012,1,1,1
+"NCT01355081(japicCTI-111492, U1111-1120-9277)",518,placebo,49,124,2012,1,1,1
+"NCT01255787 (EUCTR2010-022257-41, Lu AA21004/CCT-002, U1111-1117-6595, JapicCTI-101344, CTRI/2011/08/001963)",519,placebo,59,152,2012,1,1,1
+"NCT01255787 (EUCTR2010-022257-41, Lu AA21004/CCT-002, U1111-1117-6595, JapicCTI-101344, CTRI/2011/08/001963)",519,vortioxetine,226,448,2012,1,1,1
+McIntyre2014 (NCT01422213),520,placebo,57,198,2013,1,1,0
+McIntyre2014 (NCT01422213),520,vortioxetine,212,404,2013,1,1,0
+"Wang2015 (NCT01571453, KCT0000432, 13926A)",521,vortioxetine,139,213,2013,1,1,0
+"Wang2015 (NCT01571453, KCT0000432, 13926A)",521,venlafaxine,132,230,2013,1,1,0
+Mahableshwarkar2015c (NCT01564862),522,vortioxetine,89,198,2014,1,1,0
+Mahableshwarkar2015c (NCT01564862),522,duloxetine,102,210,2014,1,1,0
+Mahableshwarkar2015c (NCT01564862),522,placebo,69,194,2014,1,1,0
