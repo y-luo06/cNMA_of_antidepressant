@@ -3,9 +3,9 @@ library(netmeta)
 library(dplyr)
 library(ggplot2)
 library(scatterpie)
-library(rdrop2)
 library(scales)
 library(ggrepel)
+library(slickR)
 
 #link to the dataset
 def_active <- read.csv("data/active-efficacy.csv", header = TRUE, stringsAsFactors = FALSE) 
@@ -21,58 +21,12 @@ dfac_fluo <- read.csv("data/fluo-ac.csv", header = TRUE, stringsAsFactors = FALS
 dfef_plac <- read.csv("data/plac-ef.csv", header = TRUE, stringsAsFactors = FALSE) 
 dfac_plac <- read.csv("data/plac-ac.csv", header = TRUE, stringsAsFactors = FALSE)
 
-#confidence in the evidence data
-dcon16 <- data.frame(trts = c("agom", "amit", "bupr", "cita", "clom", "dulo", "esci", "fluo", "fluv", 
-                              "miln", "mirt", "nefa", "paro", "rebo", "sert", "traz", "venl", "vort"),
-                     vlow = c(0, 0.1765, 0.1471, 0, 0.1765, 0.1176, 0, 0.0294, 0.2059, 0.0882, 0, 0.3529,
-                              0.0295, 0.1471, 0.0588, 0.2353, 0.0588, 0),
-                     low = c(0.2647, 0.7647, 0.6176, 0.4706, 0.7059, 0.3529, 0.3235, 0.4706, 0.6176, 0.9118,
-                             0.3235, 0.4706, 0.4412, 0.7353, 0.5, 0.6765, 0.4412, 0.2059), 
-                     mod = c(0.6765, 0.0588, 0.2353, 0.5, 0.1176, 0.4706, 0.4706, 0.2647, 0.1764, 0, 0.5588, 0.1765,
-                             0.4118, 0.1176, 0.4118, 0.0882, 0.4412, 0.7353),
-                     high = c(0.0588, 0, 0, 0.0294, 0, 0.0588, 0.2059, 0.2353, 0, 0, 0.0882, 0, 0.1176, 0, 0.0294, 0,
-                              0.0588, 0.0588))
-dcon10 <- data.frame(trts = c("agom", "amit", "bupr", "cita", "clom", "dulo", "esci", "fluo", "fluv", 
-                              "miln", "mirt", "nefa", "paro", "rebo", "sert", "traz", "venl"),
-                     vlow = c(0, 0.15625, 0.125, 0.03125, 0.1875, 0.1875, 0, 0, 0.1875, 0.21875, 0, 0.28125,
-                              0.0625, 0.125, 0.0625, 0.15625, 0.0625),
-                     low = c(0.09375, 0.65625, 0.5625, 0.375, 0.71875, 0.25, 0.1875, 0.5, 0.5625, 0.6875,
-                             0.375, 0.53125, 0.40625, 0.8125, 0.46875, 0.65625, 0.375), 
-                     mod = c(0.53125, 0.1875, 0.3125, 0.3125, 0.09375, 0.3125, 0.46875, 0.25, 0.25, 0.09375, 0.3125, 0.15625,
-                             0.3125, 0.0625, 0.34375, 0.1875, 0.375),
-                     high = c(0.375, 0, 0, 0.28125, 0, 0.25, 0.34375, 0.25, 0, 0, 0.3125, 0.03125, 0.21875, 0, 0.125, 0,
-                              0.1875))
-dcon05 <- data.frame(trts = c("agom", "amit", "bupr", "cita", "clom", "dulo", "esci", "fluo", "fluv", 
-                              "miln", "mirt", "nefa", "paro", "rebo", "sert", "traz", "venl"),
-                     vlow = c(0.03125, 0.21875, 0.21875, 0.0625, 0.25, 0.1875, 0.09375, 0.0625, 0.28125, 0.28125, 0, 0.28125,
-                              0.03125, 0.34375, 0.0625, 0.25, 0.09375),
-                     low = c(0.40625, 0.6875, 0.6875, 0.40625, 0.75, 0.46875, 0.4375, 0.4375, 0.5625, 0.65625,
-                             0.4375, 0.625, 0.59375, 0.65625, 0.46875, 0.71875, 0.46875), 
-                     mod = c(0.4375, 0.09375, 0.09375, 0.40625, 0, 0.28125, 0.34375, 0.46875, 0.15625, 0.0625, 0.46875, 0.09375,
-                             0.34375, 0, 0.40625, 0.03125, 0.34375),
-                     high = c(0.125, 0, 0, 0.125, 0, 0.0625, 0.125, 0.03125, 0, 0, 0.09375, 0, 0.03125, 0, 0.0625, 0,
-                              0.09375))
-dcon00 <- data.frame(trts = c("amit", "bupr", "cita", "clom", "fluo", "fluv", 
-                              "miln", "mirt", "nefa", "paro", "rebo", "sert", "traz", "venl"),
-                     vlow = c(0.4231, 0.3846, 0.1154, 0.4231, 0.1154, 0.3846, 0.3846, 0.1923, 0.3846, 0.1154, 1, 0.1154,
-                              0.5, 0.1538),
-                     low = c(0.5385, 0.6154, 0.4615, 0.5769, 0.5384, 0.5769, 0.6154, 0.4615, 0.5769, 0.5769, 0, 0.6154,
-                             0.5, 0.5385), 
-                     mod = c(0.0385, 0.0385, 0.3846, 0, 0.3077, 0.0385, 0, 0.1923, 0.0385, 0.2692, 0, 0.2308,
-                             0, 0.3077),
-                     high = c(0, 0, 0.0385, 0, 0.0385, 0, 0, 0.1538, 0, 0.0385, 0, 0.0385,
-                              0, 0))
-dcon95 <- data.frame(trts = c("amit", "bupr", "cita", "clom", "fluo", "fluv", 
-                              "miln", "paro", "rebo", "sert", "traz", "venl"),
-                     vlow = c(0.5909, 0.5455, 0.2273, 0.4545, 0.2273, 0.5, 0.5909, 0.3636, 1, 0.1818, 0.7273, 0.3182),
-                     low = c(0.4091, 0.4091, 0.4545, 0.5455, 0.4545, 0.5, 0.4091, 0.4091, 0, 0.5, 0.2727, 0.5), 
-                     mod = c(0, 0.0455, 0.3182, 0, 0.3182, 0, 0, 0.2273, 0, 0.3182, 0, 0.1818),
-                     high = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))
-dcon90 <- data.frame(trts = c("amit", "cita", "clom", "fluo", "fluv", "miln", "paro", "traz"),
-                     vlow = c(0.5714, 0.2143, 0.4286, 0.3572, 0.7143, 0.9286, 0.5, 0.7857),
-                     low = c(0.4286, 0.5714, 0.5714, 0.4286, 0.2857, 0.0714, 0.3571, 0.2143), 
-                     mod = c(0, 0.2143, 0, 0.2143, 0, 0, 0.1429, 0),
-                     high = c(0, 0, 0, 0, 0, 0, 0, 0))
+imgs_2d <- list(div(img(src = '2d_1990.jpg', height = "900px"), style = "margin-left: 10%"), div(img(src = '2d_1995.jpg', height = "900px"), style = "margin-left: 10%"), 
+                div(img(src = '2d_2000.jpg', height = "900px"), style = "margin-left: 10%"), div(img(src = '2d_2005.jpg', height = "900px"), style = "margin-left: 10%"),
+                div(img(src = '2d_2010.jpg', height = "900px"), style = "margin-left: 10%"), div(img(src = '2d_2016.jpg', height = "900px"), style = "margin-left: 10%"))
+imgs_tb <- list(div(img(src = '1990.jpg', height = "600px"), style = "margin-left: 7%"), div(img(src = '1995.jpg', height = "600px"), style = "margin-left: 7%"), 
+                div(img(src = '2000.jpg', height = "600px"), style = "margin-left: 7%"), div(img(src = '2005.jpg', height = "600px"), style = "margin-left: 7%"), 
+                div(img(src = '2010.jpg', height = "600px"), style = "margin-left: 7%"), div(img(src = '2016.jpg', height = "600px"), style = "margin-left: 7%"))
 
 colors <- c(agom = "thistle", amit = "lavenderblush4", bupr = "coral3", cita = "cadetblue4", clom = "orange3", dulo = "azure4", desv = "yellow",
             esci = "aquamarine4", fluo = "lightslateblue", fluv = "dodgerblue4", levo = "orange", miln = "goldenrod4", mirt = "palegreen4", nefa = "darkgrey",
@@ -84,12 +38,6 @@ mycss <- "
   position: absolute; left: 50%; top: 18%; z-index: -1;
 }
 #plot-container2 {
-  position: absolute; left: 50%; top: 58%; z-index: -1;
-}
-#plot-container3 {
-  position: absolute; left: 50%; top: 8%; z-index: -1;
-}
-#plot-container4 {
   position: absolute; left: 50%; top: 58%; z-index: -1;
 }
 #plot-container5 {
@@ -121,16 +69,6 @@ mycss <- "
   text-align: center; font-size:130%; font-style:italic; color: #708090;
   background-color:white; z-index: -1;
 }
-#loadmessage3 {
-  position: absolute; top: 11%; left: 10%; width: 80%; padding: 5px 0px 5px 0px;
-  text-align: center; font-size:130%; font-style:italic; color: #708090;
-  background-color:white; z-index: -1;
-}
-#loadmessage4 {
-  position: absolute; top: 61%; left: 10%; width: 80%; padding: 5px 0px 5px 0px;
-  text-align: center; font-size:130%; font-style:italic; color: #708090;
-  background-color:white; z-index: -1;
-}
 #loadmessage5 {
   position: absolute; top: 30%; left: 10%; width: 80%; padding: 5px 0px 5px 0px;
   text-align: center; font-size:130%; font-style:italic; color: #708090;
@@ -156,13 +94,14 @@ reverselog_trans <- function(base = exp(1)) {
 
 ui <- fluidPage(tags$head(tags$style(HTML("
       h2 {
-        font-family: 'Fjalla One', sans-serif;
+        font-family: 'Georgia';
         font-weight: 800;
         line-height: 1.5;
         color: #4682B4;
       }
     "))),
-                headerPanel(h2("Interactive Plots to Demonstrate the Evolution of Evidence for Antidepressants in the Acute Treatment of Major Depression")),
+                headerPanel(h2("Interactive Plots to Demonstrate the Evolution of Evidence for Antidepressants in the Acute Treatment of Major Depression"),
+                            windowTitle = "Evidence Evolution for Antidepressants"),
                 
                 fluidRow(column(5,
                                 br(),
@@ -199,13 +138,12 @@ ui <- fluidPage(tags$head(tags$style(HTML("
                 ),
                 
                 hr(),
-                
-                
+
                 sidebarLayout(position = "left",
                               sidebarPanel(style = "width: 300px",
                                            helpText("Choose the type of RCT you would like to synthesize: 
-               the reference drug will be placebo if all the trials are included, 
-               and the reference will be citalopram if only head-to-head trials are included."),
+                                                    the reference drug will be placebo if all the trials are included, 
+                                                    and the reference will be citalopram if only head-to-head trials are included."),
                                            radioButtons("RCTtype", label = "Choose the type of RCT",
                                                         choices = list("Including placebo-controlled trials", "Only head-to-head trials"),
                                                         selected = "Only head-to-head trials"),
@@ -227,11 +165,11 @@ ui <- fluidPage(tags$head(tags$style(HTML("
                                                        selected = "2016"),
                                            hr(),
                                            helpText("The dataset includes all published and unpublised data. 
-               If you would like to see the results from published data only, please check the box below."),
+                                                    If you would like to see the results from published data only, please check the box below."),
                                            strong("Check the publication status of RCTs", style = "font-size: 14px"),
                                            checkboxInput("published", label = "Pool data from published RCTs only", value = FALSE)
                               ),
-                              mainPanel(width = 9, style = "position:absolute; margin-left: 370px; margin-right: 100px",
+                              mainPanel(width = 9, style = "position:absolute; margin-left: 360px; margin-right: 100px",
                                         tabsetPanel(
                                           tabPanel("Network Plots and Basic Information",
                                                    br(),
@@ -293,71 +231,24 @@ ui <- fluidPage(tags$head(tags$style(HTML("
                                                    )
                                           ),
                                           tabPanel("2 Dimensional Plots", fluid = TRUE,
-                                                   fluidRow(
-                                                     br(),
-                                                     h4("The 2 Dimensional Plot for Both Efficacy and Acceptability", align = "center"),
-                                                     #Add a spinner indicating waiting, because it really takes a long time
-                                                     tags$head(tags$style(HTML(mycss))),
-                                                     conditionalPanel(condition = "$('html').hasClass('shiny-busy')", 
-                                                                      tags$div(id = "plot-container3",tags$img(src = "spinner.gif", id = "loading-spinner1")),
-                                                                      tags$div("Please wait. The calculations of network meta-analysis may take up to several minutes.",id="loadmessage3")),
-                                                     div(plotOutput("twodplot", width = "500px", height = "450px", click = "plot_click"), align = "center"),
-                                                     p("Please click the plot to see a zoomed one with the optimal ranges of x and y axis. (The zoomed plot will be displayed below.)", style = "color:red", align = "center"),
-                                                     strong("Note: "),
-                                                     p("(1) Drugs in the upper right area are better balanced in both efficacy and acceptability.", align = "left"),
-                                                     p("(2) The size of the node is proportionate to the number of randomized patients.", align = "left"),
-                                                     p("(3) If placebo-controlled trials are included, the plot will display 2 sets of result. 
+                                                    br(),
+                                                    h4("The 2 Dimensional Plot for Both Efficacy and Acceptability", align = "center"),
+                                                    #Add a spinner indicating waiting, because it really takes a long time
+                                                    tags$head(tags$style(HTML(mycss))),
+                                                    conditionalPanel(condition = "$('html').hasClass('shiny-busy')", 
+                                                                      tags$div(id = "plot-container1",tags$img(src = "spinner.gif", id = "loading-spinner1")),
+                                                                      tags$div("Please wait. The calculations of network meta-analysis may take up to several minutes.",id="loadmessage1")),
+                                                    div(plotOutput("twodplot", width = "500px", height = "450px", click = "plot_click"), align = "center"),
+                                                    p("Please click the plot to see a zoomed one with the optimal ranges of x and y axis. (The zoomed plot will be displayed below.)", style = "color:red", align = "center"),
+                                                    strong("Note: "),
+                                                    p("(1) Drugs in the upper right area are better balanced in both efficacy and acceptability.", align = "left"),
+                                                    p("(2) The size of the node is proportionate to the number of randomized patients.", align = "left"),
+                                                    p("(3) If placebo-controlled trials are included, the plot will display 2 sets of result. 
                                                        The solid circles indicate results from full dataset, while the empty circles indicate results from only published data.", align = "left"),
-                                                     br(),
-                                                     div(plotOutput("twodplot_flex", width = "500px", height = "450px"), align = "center"),
-                                                     br(),
-                                                     hr()),
-                                                   fluidRow(
-                                                     h4("The 2 Dimensional Plot Showing Efficacy and Acceptability Together with Confidence in the Evidence", align = "center"),
-                                                     p("We assessed the confidence in the evidence every 5 years since 1990, for head-to-head trials. We believe that it should be as important
-       to see how credible the evidence are, as with the relative effect estimates. We evaluated it at 3 levels: RCT-level, comparison-level and drug-level. At ",
-                                                       strong("RCT-level, "),
-                                                       "we assessed the risk of bias for each RCT based on Cochrane Collaboration risk of bias tool. At ",
-                                                       strong("comparison-level, "),
-                                                       "we evaluated it at each time point using ", em("CINeMA framework"), " [2] through the dedicated software. Finally,
-        the information was synthesized at ", strong("drug-level. "),
-                                                       "We combined the efficacy, acceptability and confidence in the evidence (at drug-level) in one 2 dimensional plot at each time point.", style = "font-size: 16px"),
-                                                     p("**Since the confidence in the evidence was only assessed for ",
-                                                       span("head-to-head trials", style = "color: red"),
-                                                       " at", span(" 5-year interval", style = "color: red"),
-                                                       ", this 2 dimensional plot is not as versatile as other functions. The conditions in the left sidebar are not applicable to it.", 
-                                                       strong("ONLY THE YEARS LISTED BELOW CAN BE SELECTED FOR THIS PLOT."),
-                                                       style = "font-size: 14px"),
-                                                     br(),
-                                                     helpText("All the evidence before the chosen year are synthesized. Please choose the ending time point."),
-                                                     selectInput("year_evi", label = "Show the pooled evidence until", 
-                                                                 choices = list("1990", "1995", "2000", "2005", "2010", "2016"),
-                                                                 selected = "2016"),
-                                                     hr(),
-                                                     p("[2] CINeMA: Confidence in Network Meta-Analysis [Software]. Institute of Social and Preventive Medicine, University of Bern, 2017. Available from cinema.ispm.unibe.ch.",
-                                                       style = "font-size: 14px; color: grey"),
-                                                     br(),
-                                                     #Add a spinner indicating waiting, because it really takes a long time
-                                                     tags$head(tags$style(HTML(mycss))),
-                                                     conditionalPanel(condition = "$('html').hasClass('shiny-busy')", 
-                                                                      tags$div(id = "plot-container4", tags$img(src = "spinner.gif", id = "loading-spinner2")),
-                                                                      tags$div("Please wait. The calculations of network meta-analysis may take up to several minutes.",id="loadmessage4")),
-                                                     div(plotOutput("eviplot", width = "650px", height = "700px", click = "plot_click1"), align = "center"),
-                                                     p("Please click the plot to see a zoomed one with the optimal ranges of x and y axis. (The zoomed plot will be displayed below.)", style = "color:red", align = "center"),  
-                                                     h4("2 Dimensional Plot for Efficacy, Acceptability and Confidence in the Evidence", align = "center"),
-                                                     hr(),
-                                                     p(strong("Note: "),
-                                                       "(1) Drugs in the upper right area are better balanced in both efficacy and acceptability.", align = "left"),
-                                                     p("(2) The size of the node is proportionate to the inverse of the width of 95%CI regarding efficacy. The bigger the node, the more precise the CI is.", align = "left"),
-                                                     p("(3) The colors in each pie chart is proportionate to the numbers of mixed estimates for the drug in question evaluated at four levels of GRADE certainty of evidence.
-                             The four levels are: ",
-                                                       span("green-high, ", style = "color:limegreen"), 
-                                                       span("blue-moderate, ", style = "color:steelblue"), 
-                                                       span("yellow-low, ", style = "color:yellow"), 
-                                                       span("red-very low.", style = "color:red"), align = "left"),
-                                                     div(plotOutput("eviplot_flex", width = "650px", height = "700px"), align = "center"),
-                                                     br()
-                                                   )
+                                                    br(),
+                                                    div(plotOutput("twodplot_flex", width = "500px", height = "450px"), align = "center"),
+                                                    br(),
+                                                    hr()
                                           ),
                                           tabPanel("Forest Plots",
                                                    fluidRow(
@@ -385,60 +276,18 @@ ui <- fluidPage(tags$head(tags$style(HTML("
                                                    )
                                           ),
                                           tabPanel("League Tables", 
-                                                   fluidRow(
-                                                     br(),
-                                                     br(),
-                                                     downloadButton("downloadleaguetable", "Download", align = "center"),
-                                                     br(),
-                                                     h4("You can download league table (in the form of csv file) here."),
-                                                     hr(),
-                                                     p(strong("Note: "),
-                                                       "The lower left half shows efficacy, and the upper right half shows acceptability."),
-                                                     p(strong("Caution: "),
-                                                       "The league table cannot be constructed if the drugs in the efficacy network and the acceptability network do not match. So please make sure of it in the 'Basic Information', before you try to download the league table.")
-                                                   ),
-                                                   fluidRow(
-                                                     br(),
-                                                     br(),
-                                                     hr(),
-                                                     br(),
-                                                     h4("The Colored League Table Showing Efficacy and Acceptability Together with Confidence in the Evidence", align = "center"),
-                                                     p("We assessed the confidence in the evidence every 5 years since 1990, for head-to-head trials. We believe that it should be as important
-       to see how credible the evidence are, as with the relative effect estimates. We evaluated it at 3 levels: RCT-level, comparison-level and drug-level. At ",
-                                                       strong("RCT-level, "),
-                                                       "we assessed the risk of bias for each RCT based on Cochrane Collaboration risk of bias tool. At ",
-                                                       strong("comparison-level, "),
-                                                       "we evaluated it at each time point using ", em("CINeMA framework"), " [2] through the dedicated software. Finally,
-        the information was synthesized at ", strong("drug-level. "),
-                                                       "We combined the efficacy, acceptability and confidence in the evidence (at drug-level) in one 2 dimensional plot at each time point.", style = "font-size: 16px"),
-                                                     p("This colored league table shows the confidence in the evidence together with efficacy and accetability at comparison level. We colored 
-                                                       each cell of the league table in terms of the overall confidence in evidence between two drugs: ",
-                                                       span("green indicated high, ", style = "color:limegreen"), 
-                                                       span("blue indicated moderate,", style = "color:steelblue"),
-                                                       span("yellow indicated low,", style = "color:yellow"),
-                                                       span("and red indicated very low", style = "color:red"), 
-                                                       "confidence in evidence. ", style = "font-size: 16px"),
-                                                     p("**Since the confidence in the evidence was only assessed for ",
-                                                       span("head-to-head trials", style = "color: red"),
-                                                       " at", span(" 5-year interval", style = "color: red"),
-                                                       ", this table is not as versatile as other functions. The conditions in the left sidebar are not applicable to it.", 
-                                                       strong("ONLY THE YEARS LISTED BELOW CAN BE SELECTED FOR THIS TABLE."),
-                                                       style = "font-size: 14px"),
-                                                     br(),
-                                                     helpText("All the evidence before the chosen year are synthesized. Please choose the ending time point."),
-                                                     selectInput("year_evi1", label = "Show the pooled evidence until", 
-                                                                 choices = list("1990", "1995", "2000", "2005", "2010", "2016"),
-                                                                 selected = "2016"),
-                                                     hr(),
-                                                     p("[2] CINeMA: Confidence in Network Meta-Analysis [Software]. Institute of Social and Preventive Medicine, University of Bern, 2017. Available from cinema.ispm.unibe.ch.",
-                                                       style = "font-size: 14px; color: grey"),
-                                                     br(), 
-                                                     uiOutput("coloredleaguetable"),
-                                                     hr(),
-                                                     p(strong("Note: "),
-                                                       "The lower left half shows efficacy, and the upper right half shows acceptability."),
-                                                     br()
-                                                   )
+                                                    br(),
+                                                    br(),
+                                                    downloadButton("downloadleaguetable", "Download", align = "center"),
+                                                    br(),
+                                                    h4("You can download league table (in the form of csv file) here."),
+                                                    hr(),
+                                                    p(strong("Note: "),
+                                                      "(1) The lower left half shows efficacy, and the upper right half shows acceptability.", align = "left"),
+                                                    p("(2) OR>1 indicates that the column-defined drug is favored.", align = "left"),
+                                                    p(strong("Caution: "),
+                                                      "The league table cannot be constructed if the drugs in the efficacy network and the acceptability network do not match. So please make sure of it in the 'Basic Information', before you try to download the league table.")
+                                                   
                                           ),
                                           tabPanel("Pairwise Comparisons", 
                                                    br(),
@@ -505,13 +354,75 @@ ui <- fluidPage(tags$head(tags$style(HTML("
                                                        If placebo-controlled trials are included, the plot shows all the direct comparisons with placebo. 
                                                        If only head-to-head trials are included, the plot shows only the studies directly compared with fluoxetine, which is the most frequently used active controls.", align = "left"),
                                                    )
+                                          ),
+                                          tabPanel("Evidence Evolution", fluid = TRUE, 
+                                                   fluidRow(
+                                                     br(),
+                                                     p("We assessed the confidence in the evidence for a series of consecutive network meta-analyses every 5 years since 1990, for head-to-head trials. We believe that it should be as important
+                                                       to see how credible the evidence are, as with the relative effect estimates. We evaluated it at 3 levels: RCT-level, comparison-level and drug-level. At ",
+                                                       strong("RCT-level, "),
+                                                       "we assessed the risk of bias for each RCT based on Cochrane Collaboration risk of bias tool. At ",
+                                                       strong("comparison-level, "),
+                                                       "we evaluated it at each time point using ", em("CINeMA framework"), " [2] through the dedicated software. Finally,
+                                                       the information was synthesized at ", strong("drug-level. ")),
+                                                     p(span("We combined the efficacy, acceptability and confidence in the evidence at comparison-level in league tables, and at drug-level in 2 dimensional plots at each time point.
+                                                            These results demonstrate how evidence evolved in the past decades.", style = "color:green"), style = "font-size: 15px"),
+                                                     p("**The left side bar is not applicable to the illustration under this tab.", style = "color:red"),
+                                                     hr(),
+                                                     p("[2] CINeMA: Confidence in Network Meta-Analysis [Software]. Institute of Social and Preventive Medicine, University of Bern, 2017. Available from cinema.ispm.unibe.ch.",
+                                                       style = "font-size: 12px; color: grey"),
+                                                     br()
+                                                   ),
+                                                   fluidRow(
+                                                     br(),
+                                                     h4("Evidence Evolution via 2 Dimensional Plots", align = "center"),
+                                                     br(),
+                                                     slickROutput("evo_2d", width = "80%", height = "900px"),
+                                                     hr(),
+                                                     p(strong("Note: "),
+                                                       "(1) Drugs in the upper right area are better balanced in both efficacy and acceptability.", align = "left"),
+                                                     p("(2) The size of the node is proportionate to the inverse of the width of 95%CI regarding efficacy. The bigger the node, the more precise the CI is.", align = "left"),
+                                                     p("(3) The colors in each pie chart is proportionate to the numbers of mixed estimates for the drug in question evaluated at four levels of GRADE certainty of evidence.
+                                                       The four levels are: ",
+                                                       span("green-high, ", style = "color:limegreen"), 
+                                                       span("blue-moderate, ", style = "color:steelblue"), 
+                                                       span("yellow-low, ", style = "color:yellow"), 
+                                                       span("red-very low.", style = "color:red"), align = "left"),
+                                                     br()
+                                                   ),
+                                                   fluidRow(
+                                                     hr(),
+                                                     br(),
+                                                     h4("Evidence Evolution via Colored League Tables", align = "center"),
+                                                     slickROutput("evo_tb", width = "90%", height = "600px"),
+                                                     hr(),
+                                                     p(strong("Note: "),
+                                                       "(1) The lower left half shows efficacy, and the upper right half shows acceptability.", align = "left"),
+                                                     p("(2) OR>1 indicates that the column-defined drug is favored.", align = "left"),
+                                                     p("(3) We colored each cell of the league table in terms of the overall confidence in evidence between two drugs: ",
+                                                       span("green indicated high, ", style = "color:limegreen"), 
+                                                       span("blue indicated moderate,", style = "color:steelblue"),
+                                                       span("yellow indicated low,", style = "color:yellow"),
+                                                       span("and red indicated very low", style = "color:red"), 
+                                                       "confidence in evidence. ", align = "left"),
+                                                     br()
+                                                   )),
+                                          tags$head(
+                                            tags$style(
+                                              'ul.nav.nav-tabs {
+                                               overflow-x: visible;
+                                               overflow-y: hidden;
+                                               display: flex;
+                                            }'
+                                            )
                                           )
+                                          
                                         )
                               )
                 ),
                 
                 fluidRow(
-                  column(6, div(style = "height:2620px;background-color:rgba(0,0,0,0);"))),
+                  column(3, div(style = "height:1750px;background-color:rgba(0,0,0,0);"))),
                 fluidRow(
                   fillRow(div(style = "height:150px;background-color:rgba(95,158,209,1.0);")),
                   br(),
@@ -573,11 +484,6 @@ server <- function(input, output, session) {
     }
   })
   
-  #for confidence data
-  defconInput <- reactive({
-    subset(def_active, study_year < input$year_evi)
-  })
-  
   # NMA
   netefInput <- reactive({
     tmp.dsef <- subset(dsefInput(), study_year >= input$yearsince & study_year < input$yearuntil)
@@ -619,13 +525,6 @@ server <- function(input, output, session) {
     }
   })
   
-  
-  #NMA for confidence data
-  netefconInput <- reactive({
-    tmp.defcon <- pairwise(treat = t, n, event = r, data = defconInput(), studlab = id, sm = "OR")
-    netmeta(tmp.defcon, comb.fixed = FALSE, comb.random = TRUE, reference.group = "citalopram")
-  })
-  
   dacInput <- reactive({
     tmp.dsac <- subset(dsacInput(), study_year >= input$yearsince & study_year < input$yearuntil)
     if (input$published == TRUE) {
@@ -651,10 +550,6 @@ server <- function(input, output, session) {
     } else {
       tmp.dsfac
     }
-  })
-  
-  dacconInput <- reactive({
-    subset(dac_active, study_year < input$year_evi)
   })
   
   netacInput <- reactive({
@@ -695,26 +590,6 @@ server <- function(input, output, session) {
       netmeta(tmp.dacp1, comb.fixed = FALSE, comb.random = TRUE, reference.group = "citalopram")
     }
   })
-  netacconInput <- reactive({
-    tmp.daccon <- pairwise(treat = t, n, event = r, data = dacconInput(), studlab = id, sm = "OR")
-    netmeta(tmp.daccon, comb.fixed = FALSE, comb.random = TRUE, reference.group = "citalopram")
-  })
-  
-  dconInput <- reactive({
-    if (input$year_evi == 2016) {
-      dcon16
-    } else if (input$year_evi == 2010) {
-      dcon10
-    } else if (input$year_evi == 2005) {
-      dcon05
-    } else if (input$year_evi == 2000) {
-      dcon00
-    } else if (input$year_evi == 1995) {
-      dcon95
-    } else {
-      dcon90
-    }
-  })
   
   dator <- reactive({
     defor <- data.frame(trts = netefInput()$trts,
@@ -746,26 +621,6 @@ server <- function(input, output, session) {
                          sample_ac = netacpInput()$n.trts)
     dacorp$trts <- substr(dacorp$trts, 0, 4)
     merge(deforp, dacorp, by = "trts", all = TRUE)
-  })
-  
-  datorcon <- reactive({
-    deforcon <- data.frame(trts = netefconInput()$trts,
-                           ORef = exp(netefconInput()$TE.random[, netefconInput()$reference.group]),
-                           loweref = exp(netefconInput()$lower.random[, netefconInput()$reference.group]),
-                           upperef = exp(netefconInput()$upper.random[, netefconInput()$reference.group]),
-                           radius = 1/(5*netefconInput()$seTE.random[, netefconInput()$reference.group]))
-    deforcon["citalopram", "radius"] = 1
-    deforcon$trts <- substr(deforcon$trts, 0, 4)
-    dacorcon <- data.frame(trts = netacconInput()$trts,
-                           ORac = exp(netacconInput()$TE.random[, netacconInput()$reference.group]),
-                           lowerac = exp(netacconInput()$lower.random[, netacconInput()$reference.group]),
-                           upperac = exp(netacconInput()$upper.random[, netacconInput()$reference.group]))
-    dacorcon$trts <- substr(dacorcon$trts, 0, 4)
-    merge(deforcon, dacorcon, by = "trts", all = TRUE)
-  }) 
-  
-  datorev <- reactive({
-    na.omit(merge(datorcon(), dconInput(), by = "trts", all = TRUE))
   })
   
   #link to the R scripts for NMA
@@ -967,23 +822,7 @@ server <- function(input, output, session) {
       write.table(league_table$random, file, row.names = FALSE, col.names = FALSE, sep = ",")
     }
   )
-  
-  output$coloredleaguetable <- renderUI({
-    if (input$year_evi1 == 2016) {
-      img(src = '2016.jpg', width = "90%")
-    } else if (input$year_evi1 == 2010) {
-      img(src = '2010.jpg', width = "90%")
-    } else if (input$year_evi1 == 2005) {
-      img(src = '2005.jpg', width = "90%")
-    } else if (input$year_evi1 == 2000) {
-      img(src = '2000.jpg', width = "90%")
-    } else if (input$year_evi1 == 1995) {
-      img(src = '1995.jpg', width = "90%")
-    } else {
-      img(src = '1990.jpg', width = "90%")
-    }
-  })
-  
+
   output$comparison_ef <-renderText({
     validate(
       need(input$drug1 %in% defInput()$t, "It is likely that drug A is missing in the efficacy network you select. Please choose another drug."),
@@ -1007,39 +846,12 @@ server <- function(input, output, session) {
           comparison_ac_or, " (", comparison_ac_lo, " to ", comparison_ac_up, ")")
   })
   
-  output$eviplot <- renderPlot({
-    ggplot(datorev(), aes(x = ORef, y = ORac, label = trts)) + labs(x = "OR of efficacy", y = "OR of acceptability") +
-      scale_y_continuous(trans = reverselog_trans(10), limits = c(2.2, 0.2), breaks = seq(2.2, 0.2, -0.2)) + 
-      scale_x_continuous(limits = c(0.6, 3.6), breaks = seq(0.6, 3.6, 0.2), trans = "log10") +
-      annotation_logticks() +
-      geom_text_repel(data = datorev(), 
-                      col = "gray29", 
-                      cex = 4, point.padding = 0.7, force = 5, segment.size = 0.2, segment.color = "grey50") +
-      geom_hline(yintercept = 1, linetype = "dotted", col = "lightblue4") + geom_vline(xintercept = 1, linetype = "dotted", col = "lightblue4") +
-      geom_scatterpie(data = datorev(), aes(x = ORef, y = ORac, r = 0.012*radius), cols = colnames(datorev()[, 9:12]), alpha = 0.9, color = NA, show.legend = FALSE) +
-      scale_fill_manual(values = c(vlow = "red", low = "yellow", mod = "steelblue3", high = "limegreen")) + theme_bw()
+  output$evo_2d <- renderSlickR({
+    slickR(imgs_2d, width = "90%", slideId = "sl1")
   })
   
-  count1<-0
-  observeEvent(input$plot_click1, {
-    count1 <<- count1 + 1
-    if (count1 %% 2 == 0) {
-      output$eviplot_flex <- renderPlot({
-        NULL
-      })
-    }
-    else {
-      output$eviplot_flex <- renderPlot({
-        ggplot(datorev(), aes(x = ORef, y = ORac, label = trts)) + labs(x = "OR of efficacy", y = "OR of acceptability") +
-          scale_y_continuous(trans = "reverse") +
-          geom_text_repel(data = datorev(), 
-                          col = "gray29", 
-                          cex = 4, point.padding = 0.7, force = 5, segment.size = 0.2, segment.color = "grey50") +
-          geom_hline(yintercept = 1, linetype = "dotted", col = "lightblue4") + geom_vline(xintercept = 1, linetype = "dotted", col = "lightblue4") +
-          geom_scatterpie(data = datorev(), aes(x = ORef, y = ORac, r = 0.012*radius), cols = colnames(datorev()[, 9:12]), alpha = 0.9, color = NA, show.legend = FALSE) +
-          scale_fill_manual(values = c(vlow = "red", low = "yellow", mod = "steelblue3", high = "limegreen")) + theme_bw()
-      })
-    }
+  output$evo_tb <- renderSlickR({
+    slickR(imgs_tb, width = "90%", slideId = "sl2")
   })
   
   output$funnel_efficacy <- renderImage({
@@ -1113,3 +925,4 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui = ui, server = server)
+
